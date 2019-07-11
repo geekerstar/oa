@@ -13,8 +13,8 @@ public class GlobalBizImpl implements GlobalBiz {
 
     public Employee login(String sn, String password) {
         Employee employee = employeeDao.select(sn);
-        if(employee!=null&&employee.getPassword().equals(password)){
-            return  employee;
+        if (employee != null && employee.getPassword().equals(password)) {
+            return employee;
         }
         return null;
     }

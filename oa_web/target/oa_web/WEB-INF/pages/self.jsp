@@ -26,7 +26,7 @@
                         <div class="col-md-4">${sessionScope.employee.post}</div>
                     </div>
                     <div class="panel-footer text-right">
-                        <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回 </button>
+                        <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回</button>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-'use strict'; 
+'use strict';
 /*! main.js - v0.1.1
 * http://admindesigns.com/
 * Copyright (c) 2015 Admin Designs;*/
@@ -8,657 +8,698 @@
  * Settings Pane and misc functions */
 var demoHighCharts = function () {
 
-        // Define chart color patterns
-        var highColors = [bgInfo, bgPrimary, bgSuccess, bgWarning,
-            bgDanger, bgSuccess, bgSystem, bgDark
-        ];
+    // Define chart color patterns
+    var highColors = [bgInfo, bgPrimary, bgSuccess, bgWarning,
+        bgDanger, bgSuccess, bgSystem, bgDark
+    ];
 
-        // High Charts Demo
-        var demoHighCharts = function() {
+    // High Charts Demo
+    var demoHighCharts = function () {
 
 
-            // Column Charts
-            var demoHighColumns = function() {
+        // Column Charts
+        var demoHighColumns = function () {
 
-                 var column1 = $('#high-column');
+            var column1 = $('#high-column');
 
-                 if (column1.length) {
-                    // Column Chart 1
-                    $('#high-column').highcharts({
-                        credits: false,
-                        colors: highColors,
-                        chart: {
-                            backgroundColor: 'transparent',
-                            type: 'column',
-                            padding: 0,
-                            margin: 0,
-                            marginTop: 10
-                        },
-                        legend: {
-                            enabled: false
-                        },
+            if (column1.length) {
+                // Column Chart 1
+                $('#high-column').highcharts({
+                    credits: false,
+                    colors: highColors,
+                    chart: {
+                        backgroundColor: 'transparent',
+                        type: 'column',
+                        padding: 0,
+                        margin: 0,
+                        marginTop: 10
+                    },
+                    legend: {
+                        enabled: false
+                    },
+                    title: {
+                        text: null
+                    },
+                    xAxis: {
+                        lineWidth: 0,
+                        tickLength: 0,
+                        minorTickLength: 0,
                         title: {
                             text: null
                         },
-                        xAxis: {
-                            lineWidth: 0,
-                            tickLength: 0,
-                            minorTickLength: 0,
-                            title: {
-                                text: null
-                            },
-                            labels: {
-                                enabled: false
-                            }
-                        },
-                        yAxis: {
-                            gridLineWidth: 0,
-                            title: {
-                                text: null
-                            },
-                            labels: {
-                                enabled: false
-                            }
-                        },
-                        tooltip: {
-                            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-                            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-                            footerFormat: '</table>',
-                            shared: true,
-                            useHTML: true
-                        },
-                        plotOptions: {
-                            column: {
-                                groupPadding: 0.05,
-                                pointPadding: 0.25,
-                                borderWidth: 0
-                            }
-                        },
-                        series: [{
-                            name: 'Behance',
-                            data: [30]
-                        }, {
-                            name: 'Twitter',
-                            data: [60]
-                        }, {
-                            name: 'Facebook',
-                            data: [90]
-                        }, {
-                            name: 'Dribble',
-                            data: [120]
-                        }]
-                    });
-                 }
-                    
-                 var column2 = $('#high-column2');
-                 
-                 if (column2.length) {
-
-                    // Column Chart 2
-                    $('#high-column2').highcharts({
-                        credits: false,
-                        colors: [bgPrimary, bgPrimary, bgWarning,
-                            bgWarning, bgInfo, bgInfo
-                        ],
-                        chart: {
-                            padding: 0,
-                            marginTop: 25,
-                            marginLeft: 15,
-                            marginRight: 5,
-                            marginBottom: 30,
-                            type: 'column',
-                        },
-                        legend: {
+                        labels: {
                             enabled: false
-                        },
-                        title: {
-                            text: null,
-                        },
-                        xAxis: {
-                            lineWidth: 0,
-                            tickLength: 6,
-                            title: {
-                                text: null
-                            },
-                            labels: {
-                                enabled: true
-                            }
-                        },
-                        yAxis: {
-                            max: 20,
-                            lineWidth: 0,
-                            gridLineWidth: 0,
-                            lineColor: '#EEE',
-                            gridLineColor: '#EEE',
-                            title: {
-                                text: null
-                            },
-                            labels: {
-                                enabled: false,
-                                style: {
-                                    fontWeight: '400'
-                                }
-                            }
-                        },
-                        tooltip: {
-                            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-                            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-                            footerFormat: '</table>',
-                            shared: true,
-                            useHTML: true
-                        },
-                        plotOptions: {
-                            column: {
-                                colorByPoint: true,
-                            }
-                        },
-                        series: [{
-                            name: 'Tokyo',
-                            data: [12, 14, 20, 19, 8, 12,
-                                14, 20, 5, 16, 8, 12,
-                                14, 20, 19, 5, 16, 8,
-                                12, 14, 20, 19, 5, 16,
-                                8
-                            ]
-                        }]
-                    });
-
-                 }
-
-                 var column3 = $('#high-column3');
-                 
-                 if (column3.length) {
-
-                    // Column Chart3
-                    $('#high-column3').highcharts({
-                        credits: false,
-                        colors: highColors,
-                        chart: {
-                            type: 'column',
-                            padding: 0,
-                            spacingTop: 10,
-                            marginTop: 100,
-                            marginLeft: 30,
-                            marginRight: 30
-                        },
-                        legend: {
-                            enabled: false
-                        },
-                        title: {
-                            text: '30.8 hrs',
-                            style: {
-                                fontSize: 20,
-                                fontWeight: 600
-                            }
-                        },
-                        subtitle: {
-                            text: 'Average First response time <br> in past 30 days',
-                            style: {
-                                color: '#AAA'
-                            }
-                        },
-                        xAxis: {
-                            lineWidth: 0,
-                            tickLength: 0,
-                            title: {
-                                text: null
-                            },
-                            labels: {
-                                enabled: true,
-                                formatter: function() {
-                                    return this.value + "-" + (
-                                            this.value + 2) +
-                                        "<br> hours"; // clean, unformatted number for year
-                                }
-                            },
-                        },
-                        yAxis: {
-                            gridLineWidth: 0,
-                            title: {
-                                text: null
-                            },
-                            labels: {
-                                enabled: false
-                            }
-                        },
-                        tooltip: {
-                            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-                            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-                            footerFormat: '</table>',
-                            shared: true,
-                            useHTML: true
-                        },
-                        plotOptions: {
-                            column: {
-                                colorByPoint: true,
-                                colors: [bgPrimary, bgPrimary,
-                                    bgInfo, bgInfo
-                                ],
-                                groupPadding: 0,
-                                pointPadding: 0.24,
-                                borderWidth: 0
-                            }
-                        },
-                        series: [{
-                            name: 'Yahoo',
-                            data: [7, 6, 9, 14, 18, 21, 25]
-                        }, {
-                            visible: false,
-                            name: 'CNN',
-                            data: [3, 4.2, 5.7, 8.5, 11.9, 15]
-                        }, {
-                            visible: false,
-                            name: 'Yahoo',
-                            data: [1, 5, 5, 11, 17, 22, 24]
-                        }, {
-                            visible: false,
-                            name: 'CNN',
-                            data: [1, 5, 5, 11, 17.0, 22, 24]
-                        }],
-                        dataLabels: {
-                            enabled: true,
-                            rotation: 0,
-                            color: '#AAA',
-                            align: 'center',
-                            x: 0,
-                            y: -8,
                         }
-                    });
-                }
-
-
-            } // End High Columns
-
-            var demoHighBars = function() {
-
-                 var bars1 = $('#high-bars');
-                 
-                 if (bars1.length) {
-
-                    // Bar Chart 1
-                    $('#high-bars').highcharts({
-                        colors: highColors,
-                        credits: false,
-                        legend: {
-                            enabled: false,
-                            y: -5,
-                            verticalAlign: 'top',
-                            useHTML: true
-                        },
-                        chart: {
-                            spacingLeft: 30,
-                            type: 'bar',
-                            marginBottom: 0,
-                            marginTop: 0
-                        },
+                    },
+                    yAxis: {
+                        gridLineWidth: 0,
                         title: {
                             text: null
                         },
-                        xAxis: {
-                            showEmpty: false,
-                            tickLength: 80,
-                            lineColor: '#EEE',
-                            tickColor: '#EEE',
-                            offset: 1,
-                            categories: ['TV', 'Radio'],
-                            title: {
-                                text: null
-                            },
-                            labels: {
-                                align: 'right',
-                            }
-                        },
-                        yAxis: {
-                            min: 0,
-                            gridLineWidth: 0,
-                            showEmpty: false,
-                            title: {
-                                text: null
-                            },
-                            labels: {
-                                enabled: false,
-                            }
-                        },
-                        tooltip: {
-                            valueSuffix: ' millions'
-                        },
-                        plotOptions: {
-                            bar: {}
-                        },
-                        series: [{
-                            id: 0,
-                            name: 'Viewers',
-                            data: [100, 100]
-                        }, {
-                            id: 1,
-                            name: 'Women',
-                            data: [36, 55]
-                        }, {
-                            id: 2,
-                            name: 'Men',
-                            data: [65, 45]
-                        }]
-                    });
-                }
+                        labels: {
+                            enabled: false
+                        }
+                    },
+                    tooltip: {
+                        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                        footerFormat: '</table>',
+                        shared: true,
+                        useHTML: true
+                    },
+                    plotOptions: {
+                        column: {
+                            groupPadding: 0.05,
+                            pointPadding: 0.25,
+                            borderWidth: 0
+                        }
+                    },
+                    series: [{
+                        name: 'Behance',
+                        data: [30]
+                    }, {
+                        name: 'Twitter',
+                        data: [60]
+                    }, {
+                        name: 'Facebook',
+                        data: [90]
+                    }, {
+                        name: 'Dribble',
+                        data: [120]
+                    }]
+                });
             }
 
-            var demoHighLines = function() {
+            var column2 = $('#high-column2');
 
-                var line1 = $('#high-line');
-                 
-                if (line1.length) {
+            if (column2.length) {
 
-                    // High Line 1
-                    $('#high-line').highcharts({
-                        credits: false,
-                        colors: highColors,
-                        chart: {
-                            type: 'column',
-                            zoomType: 'x',
-                            panning: true,
-                            panKey: 'shift',
-                            marginRight: 50,
-                            marginTop: -5,
-                        },
+                // Column Chart 2
+                $('#high-column2').highcharts({
+                    credits: false,
+                    colors: [bgPrimary, bgPrimary, bgWarning,
+                        bgWarning, bgInfo, bgInfo
+                    ],
+                    chart: {
+                        padding: 0,
+                        marginTop: 25,
+                        marginLeft: 15,
+                        marginRight: 5,
+                        marginBottom: 30,
+                        type: 'column',
+                    },
+                    legend: {
+                        enabled: false
+                    },
+                    title: {
+                        text: null,
+                    },
+                    xAxis: {
+                        lineWidth: 0,
+                        tickLength: 6,
                         title: {
                             text: null
                         },
-                        xAxis: {
-                            gridLineColor: '#EEE',
-                            lineColor: '#EEE',
-                            tickColor: '#EEE',
-                            categories: ['Jan', 'Feb', 'Mar', 'Apr',
-                                'May', 'Jun', 'Jul', 'Aug',
-                                'Sep', 'Oct', 'Nov', 'Dec'
-                            ]
+                        labels: {
+                            enabled: true
+                        }
+                    },
+                    yAxis: {
+                        max: 20,
+                        lineWidth: 0,
+                        gridLineWidth: 0,
+                        lineColor: '#EEE',
+                        gridLineColor: '#EEE',
+                        title: {
+                            text: null
                         },
-                        yAxis: {
-                            min: -2,
-                            tickInterval: 5,
-                            gridLineColor: '#EEE',
-                            title: {
-                                text: 'Traffic',
-                                style: {
-                                    color: bgInfo,
-                                    fontWeight: '600'
-                                }
-                            }
-                        },
-                        plotOptions: {
-                            spline: {
-                                lineWidth: 3,
-                            },
-                            area: {
-                                fillOpacity: 0.2
-                            }
-                        },
-                        legend: {
+                        labels: {
                             enabled: false,
-                        },
-                        series: [{
-                            name: 'Yahoo',
-                            data: [7.0, 6, 9, 14, 18, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-                        }, {
-                            name: 'CNN',
-                            data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
-                        }, {
-                            visible: false,
-                            name: 'Yahoo',
-                            data: [1, 5, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
-                        }, {
-                            visible: false,
-                            name: 'Facebook',
-                            data: [3, 1, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
-                        }, {
-                            visible: false,
-                            name: 'Facebook',
-                            data: [7.0, 6, 9, 14, 18, 21.5, 25.2, 26.5, 23.3, 18.3,13.9, 9.6]
-                        }, {
-                            visible: false,
-                            name: 'CNN',
-                            data: [1, 5, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
-                        }]
-                    });
+                            style: {
+                                fontWeight: '400'
+                            }
+                        }
+                    },
+                    tooltip: {
+                        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                        footerFormat: '</table>',
+                        shared: true,
+                        useHTML: true
+                    },
+                    plotOptions: {
+                        column: {
+                            colorByPoint: true,
+                        }
+                    },
+                    series: [{
+                        name: 'Tokyo',
+                        data: [12, 14, 20, 19, 8, 12,
+                            14, 20, 5, 16, 8, 12,
+                            14, 20, 19, 5, 16, 8,
+                            12, 14, 20, 19, 5, 16,
+                            8
+                        ]
+                    }]
+                });
 
-                }
+            }
 
-                var line3 = $('#high-line3');
-                 
-                if (line3.length) {
+            var column3 = $('#high-column3');
 
-                    // High Line 3
-                    $('#high-line3').highcharts({
-                        credits: false,
-                        colors: highColors,
-                        chart: {
-                            backgroundColor: '#f9f9f9',
-                            className: 'br-r',
-                            type: 'line',
-                            zoomType: 'x',
-                            panning: true,
-                            panKey: 'shift',
-                            marginTop: 25,
-                            marginRight: 1,
-                        },
+            if (column3.length) {
+
+                // Column Chart3
+                $('#high-column3').highcharts({
+                    credits: false,
+                    colors: highColors,
+                    chart: {
+                        type: 'column',
+                        padding: 0,
+                        spacingTop: 10,
+                        marginTop: 100,
+                        marginLeft: 30,
+                        marginRight: 30
+                    },
+                    legend: {
+                        enabled: false
+                    },
+                    title: {
+                        text: '30.8 hrs',
+                        style: {
+                            fontSize: 20,
+                            fontWeight: 600
+                        }
+                    },
+                    subtitle: {
+                        text: 'Average First response time <br> in past 30 days',
+                        style: {
+                            color: '#AAA'
+                        }
+                    },
+                    xAxis: {
+                        lineWidth: 0,
+                        tickLength: 0,
                         title: {
                             text: null
                         },
-                        xAxis: {
-                            gridLineColor: '#EEE',
-                            lineColor: '#EEE',
-                            tickColor: '#EEE',
-                            categories: ['Jan', 'Feb', 'Mar', 'Apr',
-                                'May', 'Jun', 'Jul', 'Aug',
-                                'Sep', 'Oct', 'Nov', 'Dec'
-                            ]
-                        },
-                        yAxis: {
-                            min: 0,
-                            tickInterval: 5,
-                            gridLineColor: '#EEE',
-                            title: {
-                                text: null,
+                        labels: {
+                            enabled: true,
+                            formatter: function () {
+                                return this.value + "-" + (
+                                    this.value + 2) +
+                                    "<br> hours"; // clean, unformatted number for year
                             }
                         },
-                        plotOptions: {
-                            spline: {
-                                lineWidth: 3,
-                            },
-                            area: {
-                                fillOpacity: 0.2
-                            }
-                        },
-                        legend: {
-                            enabled: false,
-                        },
-                        series: [{
-                            name: 'Yahoo',
-                            data: [7.0, 6, 9, 14, 18, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-                        }, {
-                            name: 'CNN',
-                            data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
-                        }, {
-                            visible: false,
-                            name: 'Yahoo',
-                            data: [1, 5, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
-                        }, {
-                            visible: false,
-                            name: 'Facebook',
-                            data: [3, 1, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
-                        }, {
-                            visible: false,
-                            name: 'Facebook',
-                            data: [7.0, 6, 9, 14, 18, 21.5, 25.2, 26.5, 23.3, 18.3,13.9, 9.6]
-                        }, {
-                            visible: false,
-                            name: 'CNN',
-                            data: [1, 5, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
-                        }]
-                    });
-
-                }
-
-            } // End High Line Charts Demo
-
-            // Pie Charts
-            var demoHighPies = function() { 
-
-                var pie1 = $('#high-pie');
-                 
-                if (pie1.length) {
-
-                    // Pie Chart1
-                    $('#high-pie').highcharts({
-                        credits: false,
-                        chart: {
-                            plotBackgroundColor: null,
-                            plotBorderWidth: null,
-                            plotShadow: false
-                        },
+                    },
+                    yAxis: {
+                        gridLineWidth: 0,
                         title: {
                             text: null
                         },
-                        tooltip: {
-                            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-                        },
-                        plotOptions: {
-                            pie: {
-                                center: ['30%', '50%'],
-                                allowPointSelect: true,
-                                cursor: 'pointer',
-                                dataLabels: {
-                                    enabled: false
-                                },
-                                showInLegend: true
-                            }
-                        },
-                        colors: highColors,
-                        legend: {
-                            x: 90,
-                            floating: true,
-                            verticalAlign: "middle",
-                            layout: "vertical",
-                            itemMarginTop: 10
-                        },
-                        series: [{
-                            type: 'pie',
-                            name: 'Browser share',
-                            data: [
-                                ['Firefox', 35.0],
-                                ['IE', 36.8], {
-                                    name: 'Chrome',
-                                    y: 15.8,
-                                    sliced: true,
-                                    selected: true
-                                },
-                                ['Safari', 18.5],
-                            ]
-                        }]
-                    });
-                }
-            } // End High Pie Charts Demo
-
-            // Demo High Area Charts
-            var demoHighAreas = function() {
-
-                var area1 = $('#high-area');
-                 
-                if (area1.length) {
-
-                    // Area 1
-                    $('#high-area').highcharts({
-                        colors: highColors,
-                        credits: false,
-                        chart: {
-                            type: 'areaspline',
-                            spacing: 0,
-                            margin: -5
-                        },
-                        title: {
-                            text: null
-                        },
-                        legend: {
+                        labels: {
                             enabled: false
+                        }
+                    },
+                    tooltip: {
+                        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                        footerFormat: '</table>',
+                        shared: true,
+                        useHTML: true
+                    },
+                    plotOptions: {
+                        column: {
+                            colorByPoint: true,
+                            colors: [bgPrimary, bgPrimary,
+                                bgInfo, bgInfo
+                            ],
+                            groupPadding: 0,
+                            pointPadding: 0.24,
+                            borderWidth: 0
+                        }
+                    },
+                    series: [{
+                        name: 'Yahoo',
+                        data: [7, 6, 9, 14, 18, 21, 25]
+                    }, {
+                        visible: false,
+                        name: 'CNN',
+                        data: [3, 4.2, 5.7, 8.5, 11.9, 15]
+                    }, {
+                        visible: false,
+                        name: 'Yahoo',
+                        data: [1, 5, 5, 11, 17, 22, 24]
+                    }, {
+                        visible: false,
+                        name: 'CNN',
+                        data: [1, 5, 5, 11, 17.0, 22, 24]
+                    }],
+                    dataLabels: {
+                        enabled: true,
+                        rotation: 0,
+                        color: '#AAA',
+                        align: 'center',
+                        x: 0,
+                        y: -8,
+                    }
+                });
+            }
+
+
+        } // End High Columns
+
+        var demoHighBars = function () {
+
+            var bars1 = $('#high-bars');
+
+            if (bars1.length) {
+
+                // Bar Chart 1
+                $('#high-bars').highcharts({
+                    colors: highColors,
+                    credits: false,
+                    legend: {
+                        enabled: false,
+                        y: -5,
+                        verticalAlign: 'top',
+                        useHTML: true
+                    },
+                    chart: {
+                        spacingLeft: 30,
+                        type: 'bar',
+                        marginBottom: 0,
+                        marginTop: 0
+                    },
+                    title: {
+                        text: null
+                    },
+                    xAxis: {
+                        showEmpty: false,
+                        tickLength: 80,
+                        lineColor: '#EEE',
+                        tickColor: '#EEE',
+                        offset: 1,
+                        categories: ['TV', 'Radio'],
+                        title: {
+                            text: null
                         },
-                        xAxis: {
-                            allowDecimals: false,
-                            tickColor: '#EEE',
-                            labels: {
-                                formatter: function() {
-                                    return this.value; // clean, unformatted number for year
-                                }
+                        labels: {
+                            align: 'right',
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        gridLineWidth: 0,
+                        showEmpty: false,
+                        title: {
+                            text: null
+                        },
+                        labels: {
+                            enabled: false,
+                        }
+                    },
+                    tooltip: {
+                        valueSuffix: ' millions'
+                    },
+                    plotOptions: {
+                        bar: {}
+                    },
+                    series: [{
+                        id: 0,
+                        name: 'Viewers',
+                        data: [100, 100]
+                    }, {
+                        id: 1,
+                        name: 'Women',
+                        data: [36, 55]
+                    }, {
+                        id: 2,
+                        name: 'Men',
+                        data: [65, 45]
+                    }]
+                });
+            }
+        }
+
+        var demoHighLines = function () {
+
+            var line1 = $('#high-line');
+
+            if (line1.length) {
+
+                // High Line 1
+                $('#high-line').highcharts({
+                    credits: false,
+                    colors: highColors,
+                    chart: {
+                        type: 'column',
+                        zoomType: 'x',
+                        panning: true,
+                        panKey: 'shift',
+                        marginRight: 50,
+                        marginTop: -5,
+                    },
+                    title: {
+                        text: null
+                    },
+                    xAxis: {
+                        gridLineColor: '#EEE',
+                        lineColor: '#EEE',
+                        tickColor: '#EEE',
+                        categories: ['Jan', 'Feb', 'Mar', 'Apr',
+                            'May', 'Jun', 'Jul', 'Aug',
+                            'Sep', 'Oct', 'Nov', 'Dec'
+                        ]
+                    },
+                    yAxis: {
+                        min: -2,
+                        tickInterval: 5,
+                        gridLineColor: '#EEE',
+                        title: {
+                            text: 'Traffic',
+                            style: {
+                                color: bgInfo,
+                                fontWeight: '600'
                             }
+                        }
+                    },
+                    plotOptions: {
+                        spline: {
+                            lineWidth: 3,
                         },
-                        yAxis: {
-                            title: {
-                                text: null
+                        area: {
+                            fillOpacity: 0.2
+                        }
+                    },
+                    legend: {
+                        enabled: false,
+                    },
+                    series: [{
+                        name: 'Yahoo',
+                        data: [7.0, 6, 9, 14, 18, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+                    }, {
+                        name: 'CNN',
+                        data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+                    }, {
+                        visible: false,
+                        name: 'Yahoo',
+                        data: [1, 5, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                    }, {
+                        visible: false,
+                        name: 'Facebook',
+                        data: [3, 1, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                    }, {
+                        visible: false,
+                        name: 'Facebook',
+                        data: [7.0, 6, 9, 14, 18, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+                    }, {
+                        visible: false,
+                        name: 'CNN',
+                        data: [1, 5, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                    }]
+                });
+
+            }
+
+            var line3 = $('#high-line3');
+
+            if (line3.length) {
+
+                // High Line 3
+                $('#high-line3').highcharts({
+                    credits: false,
+                    colors: highColors,
+                    chart: {
+                        backgroundColor: '#f9f9f9',
+                        className: 'br-r',
+                        type: 'line',
+                        zoomType: 'x',
+                        panning: true,
+                        panKey: 'shift',
+                        marginTop: 25,
+                        marginRight: 1,
+                    },
+                    title: {
+                        text: null
+                    },
+                    xAxis: {
+                        gridLineColor: '#EEE',
+                        lineColor: '#EEE',
+                        tickColor: '#EEE',
+                        categories: ['Jan', 'Feb', 'Mar', 'Apr',
+                            'May', 'Jun', 'Jul', 'Aug',
+                            'Sep', 'Oct', 'Nov', 'Dec'
+                        ]
+                    },
+                    yAxis: {
+                        min: 0,
+                        tickInterval: 5,
+                        gridLineColor: '#EEE',
+                        title: {
+                            text: null,
+                        }
+                    },
+                    plotOptions: {
+                        spline: {
+                            lineWidth: 3,
+                        },
+                        area: {
+                            fillOpacity: 0.2
+                        }
+                    },
+                    legend: {
+                        enabled: false,
+                    },
+                    series: [{
+                        name: 'Yahoo',
+                        data: [7.0, 6, 9, 14, 18, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+                    }, {
+                        name: 'CNN',
+                        data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+                    }, {
+                        visible: false,
+                        name: 'Yahoo',
+                        data: [1, 5, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                    }, {
+                        visible: false,
+                        name: 'Facebook',
+                        data: [3, 1, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                    }, {
+                        visible: false,
+                        name: 'Facebook',
+                        data: [7.0, 6, 9, 14, 18, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+                    }, {
+                        visible: false,
+                        name: 'CNN',
+                        data: [1, 5, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                    }]
+                });
+
+            }
+
+        } // End High Line Charts Demo
+
+        // Pie Charts
+        var demoHighPies = function () {
+
+            var pie1 = $('#high-pie');
+
+            if (pie1.length) {
+
+                // Pie Chart1
+                $('#high-pie').highcharts({
+                    credits: false,
+                    chart: {
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null,
+                        plotShadow: false
+                    },
+                    title: {
+                        text: null
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                    },
+                    plotOptions: {
+                        pie: {
+                            center: ['30%', '50%'],
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: false
                             },
-                            gridLineColor: 'transparent',
-                            labels: {
-                                enabled: false,
+                            showInLegend: true
+                        }
+                    },
+                    colors: highColors,
+                    legend: {
+                        x: 90,
+                        floating: true,
+                        verticalAlign: "middle",
+                        layout: "vertical",
+                        itemMarginTop: 10
+                    },
+                    series: [{
+                        type: 'pie',
+                        name: 'Browser share',
+                        data: [
+                            ['Firefox', 35.0],
+                            ['IE', 36.8], {
+                                name: 'Chrome',
+                                y: 15.8,
+                                sliced: true,
+                                selected: true
+                            },
+                            ['Safari', 18.5],
+                        ]
+                    }]
+                });
+            }
+        } // End High Pie Charts Demo
+
+        // Demo High Area Charts
+        var demoHighAreas = function () {
+
+            var area1 = $('#high-area');
+
+            if (area1.length) {
+
+                // Area 1
+                $('#high-area').highcharts({
+                    colors: highColors,
+                    credits: false,
+                    chart: {
+                        type: 'areaspline',
+                        spacing: 0,
+                        margin: -5
+                    },
+                    title: {
+                        text: null
+                    },
+                    legend: {
+                        enabled: false
+                    },
+                    xAxis: {
+                        allowDecimals: false,
+                        tickColor: '#EEE',
+                        labels: {
+                            formatter: function () {
+                                return this.value; // clean, unformatted number for year
                             }
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: null
                         },
-                        plotOptions: {
-                            areaspline: {
-                                fillOpacity: 0.25,
-                                marker: {
-                                    enabled: true,
-                                    symbol: 'circle',
-                                    radius: 2,
-                                    states: {
-                                        hover: {
-                                            enabled: true
-                                        }
+                        gridLineColor: 'transparent',
+                        labels: {
+                            enabled: false,
+                        }
+                    },
+                    plotOptions: {
+                        areaspline: {
+                            fillOpacity: 0.25,
+                            marker: {
+                                enabled: true,
+                                symbol: 'circle',
+                                radius: 2,
+                                states: {
+                                    hover: {
+                                        enabled: true
                                     }
                                 }
                             }
-                        },
-                        series: [{
-                            id: 0,
-                            name: 'USA',
-                            data: [150, 260, 80, 100, 150,200, 240]
-                        }, {
-                            id: 1,
-                            name: 'Russia',
-                            data: [10, 20, 40, 120, 240, 180, 160]
-                        }, {
-                            id: 2,
-                            name: 'China',
-                            data: [60, 100, 180, 110, 100, 20, 40]
-                        }]
-                    });
-                }
+                        }
+                    },
+                    series: [{
+                        id: 0,
+                        name: 'USA',
+                        data: [150, 260, 80, 100, 150, 200, 240]
+                    }, {
+                        id: 1,
+                        name: 'Russia',
+                        data: [10, 20, 40, 120, 240, 180, 160]
+                    }, {
+                        id: 2,
+                        name: 'China',
+                        data: [60, 100, 180, 110, 100, 20, 40]
+                    }]
+                });
             }
+        }
 
-            // Init Chart Types
-            demoHighColumns();
-            demoHighLines();
-            demoHighBars();
-            demoHighPies();
-            demoHighAreas();
+        // Init Chart Types
+        demoHighColumns();
+        demoHighLines();
+        demoHighBars();
+        demoHighPies();
+        demoHighAreas();
 
-        } // End Demo HighCharts
+    } // End Demo HighCharts
 
 
-        // High Charts Demo
-        var demoHighChartMenus = function() {
+    // High Charts Demo
+    var demoHighChartMenus = function () {
 
-           // Create custom menus for charts associated
-           // with the ".chart-legend" element
-           var chartLegend = $('.chart-legend');
-                 
-            if (chartLegend.length) {
+        // Create custom menus for charts associated
+        // with the ".chart-legend" element
+        var chartLegend = $('.chart-legend');
 
-                $('.chart-legend').each(function(i, ele) {
-                    var legendID = $(ele).data('chart-id');
-                    $(ele).find('a.legend-item').each(function(
-                        i, e) {
+        if (chartLegend.length) {
+
+            $('.chart-legend').each(function (i, ele) {
+                var legendID = $(ele).data('chart-id');
+                $(ele).find('a.legend-item').each(function (
+                    i, e) {
+                    var This = $(e);
+                    var itemID = This.data(
+                        'chart-id');
+                    // Use ID of menu to find what chart it belongs to
+                    // Then use ID of its child menu items to find out what
+                    // data on the chart it is connected to
+                    var legend = $(legendID).highcharts()
+                        .series[itemID];
+                    // pull legend name from chart and populate menu buttons
+                    var legendName = legend.name;
+                    This.html(legendName);
+                    // assign click handler which toggles legend data 
+                    This.click(function (e) {
+                        if (This.attr(
+                            'href')) {
+                            e.preventDefault();
+                        }
+                        if (legend.visible) {
+                            legend.hide();
+                            This.toggleClass(
+                                'active'
+                            );
+                        } else {
+                            legend.show();
+                            This.toggleClass(
+                                'active'
+                            );
+                        }
+                    });
+                });
+            });
+        }
+
+        // Create custom menus for table charts
+        var tableLegend = $('.table-legend');
+
+        if (tableLegend.length) {
+
+            $('.table-legend').each(function (i, e) {
+                var legendID = $(e).data('chart-id');
+                $(e).find('input.legend-switch').each(
+                    function (i, e) {
                         var This = $(e);
-                        var itemID = This.data(
-                            'chart-id');
+                        var itemID = This.val();
                         // Use ID of menu to find what chart it belongs to
                         // Then use ID of its child menu items to find out what
                         // data on the chart it is connected to
@@ -667,92 +708,51 @@ var demoHighCharts = function () {
                         // pull legend name from chart and populate menu buttons
                         var legendName = legend.name;
                         This.html(legendName);
+                        // Toggle checkbox state based on series visability
+                        if (legend.visible) {
+                            This.attr('checked', true);
+                        } else {
+                            This.attr('checked', false);
+                        }
                         // assign click handler which toggles legend data 
-                        This.click(function(e) {
-                            if (This.attr(
-                                'href')) {
-                                e.preventDefault();
-                            }
+                        This.on('click', function (i, e) {
                             if (legend.visible) {
                                 legend.hide();
-                                This.toggleClass(
-                                    'active'
-                                );
+                                This.attr(
+                                    'checked',
+                                    false);
                             } else {
                                 legend.show();
-                                This.toggleClass(
-                                    'active'
-                                );
+                                This.attr(
+                                    'checked',
+                                    true);
                             }
                         });
                     });
-                });
-            }
+            });
+        }
 
-            // Create custom menus for table charts
-            var tableLegend = $('.table-legend');
-                 
-            if (tableLegend.length) {
-
-                $('.table-legend').each(function(i, e) {
-                    var legendID = $(e).data('chart-id');
-                    $(e).find('input.legend-switch').each(
-                        function(i, e) {
-                            var This = $(e);
-                            var itemID = This.val();
-                            // Use ID of menu to find what chart it belongs to
-                            // Then use ID of its child menu items to find out what
-                            // data on the chart it is connected to
-                            var legend = $(legendID).highcharts()
-                                .series[itemID];
-                            // pull legend name from chart and populate menu buttons
-                            var legendName = legend.name;
-                            This.html(legendName);
-                            // Toggle checkbox state based on series visability
-                            if (legend.visible) {
-                                This.attr('checked', true);
-                            } else {
-                                This.attr('checked', false);
-                            }
-                            // assign click handler which toggles legend data 
-                            This.on('click', function(i, e) {
-                                if (legend.visible) {
-                                    legend.hide();
-                                    This.attr(
-                                        'checked',
-                                        false);
-                                } else {
-                                    legend.show();
-                                    This.attr(
-                                        'checked',
-                                        true);
-                                }
-                            });
-                    });
-                });
-            }
-
-        } // End Demo HighChart Menus
+    } // End Demo HighChart Menus
 
 
-        // Advanced HighChart Demo
-        var demoHighChartsAdvanced = function() {
+    // Advanced HighChart Demo
+    var demoHighChartsAdvanced = function () {
 
-            // High Chart Data Set 
-            var data = [
-                0.8446, 0.8445, 0.8444, 0.8451,    0.8418, 0.8264,    0.8258, 0.8232,    0.8233, 0.8258,
-                0.8283, 0.8278, 0.8256, 0.8292,    0.8239, 0.8239,    0.8245, 0.8265,    0.8261, 0.8269,
-                0.8273, 0.8244, 0.8244, 0.8172,    0.8139, 0.8146,    0.8164, 0.82,    0.8269, 0.8269,
-                0.8269, 0.8258, 0.8247, 0.8286,    0.8289, 0.8316,    0.832, 0.8333,    0.8352, 0.8357,
-                0.8355, 0.8354, 0.8403, 0.8403,    0.8406, 0.8403,    0.8396, 0.8418,    0.8409, 0.8384,
+        // High Chart Data Set 
+        var data = [
+                0.8446, 0.8445, 0.8444, 0.8451, 0.8418, 0.8264, 0.8258, 0.8232, 0.8233, 0.8258,
+                0.8283, 0.8278, 0.8256, 0.8292, 0.8239, 0.8239, 0.8245, 0.8265, 0.8261, 0.8269,
+                0.8273, 0.8244, 0.8244, 0.8172, 0.8139, 0.8146, 0.8164, 0.82, 0.8269, 0.8269,
+                0.8269, 0.8258, 0.8247, 0.8286, 0.8289, 0.8316, 0.832, 0.8333, 0.8352, 0.8357,
+                0.8355, 0.8354, 0.8403, 0.8403, 0.8406, 0.8403, 0.8396, 0.8418, 0.8409, 0.8384,
                 0.8386, 0.8372, 0.839, 0.84, 0.8389, 0.84, 0.8423, 0.8423, 0.8435, 0.8422,
-                0.838, 0.8373, 0.8316, 0.8303,    0.8303, 0.8302,    0.8369, 0.84, 0.8385, 0.84,
-                0.8401, 0.8402, 0.8381, 0.8351,    0.8314, 0.8273,    0.8213, 0.8207,    0.8207, 0.8215,
-                0.8242, 0.8273, 0.8301, 0.8346,    0.8312, 0.8312,    0.8312, 0.8306,    0.8327, 0.8282,
+                0.838, 0.8373, 0.8316, 0.8303, 0.8303, 0.8302, 0.8369, 0.84, 0.8385, 0.84,
+                0.8401, 0.8402, 0.8381, 0.8351, 0.8314, 0.8273, 0.8213, 0.8207, 0.8207, 0.8215,
+                0.8242, 0.8273, 0.8301, 0.8346, 0.8312, 0.8312, 0.8312, 0.8306, 0.8327, 0.8282,
                 0.824, 0.8255, 0.8256, 0.8273, 0.8209, 0.8151, 0.8149, 0.8213, 0.8273, 0.8273,
                 0.8261, 0.8252, 0.824, 0.8262, 0.8258, 0.8261, 0.826, 0.8199, 0.8153, 0.8097,
-                0.8101, 0.8119, 0.8107, 0.8105,    0.8084, 0.8069,    0.8047, 0.8023,    0.7965, 0.7919,
-                0.7921, 0.7922, 0.7934, 0.7918,    0.7915, 0.787, 0.7861, 0.7861, 0.7853, 0.7867,
+                0.8101, 0.8119, 0.8107, 0.8105, 0.8084, 0.8069, 0.8047, 0.8023, 0.7965, 0.7919,
+                0.7921, 0.7922, 0.7934, 0.7918, 0.7915, 0.787, 0.7861, 0.7861, 0.7853, 0.7867,
                 0.7827, 0.7834, 0.7766, 0.7751, 0.7739, 0.7767, 0.7802, 0.7788, 0.7828, 0.7816,
                 0.7829, 0.783, 0.7829, 0.7781, 0.7811, 0.7831, 0.7826, 0.7855, 0.7855, 0.7845,
                 0.7798, 0.7777, 0.7822, 0.7785, 0.7744, 0.7743, 0.7726, 0.7766, 0.7806, 0.785,
@@ -850,446 +850,446 @@ var demoHighCharts = function () {
                 0.7855, 0.7866, 0.7865, 0.7795, 0.7758, 0.7717, 0.761, 0.7497, 0.7471, 0.7473,
                 0.7407, 0.7288, 0.7074, 0.6927, 0.7083, 0.7191, 0.719, 0.7153, 0.7156, 0.7158,
                 0.714, 0.7119, 0.7129, 0.7129, 0.7049, 0.7095
-                ],
-                detailChart;
-           
-                // create the detail chart
-                function createDetail(masterChart) {
-                        // prepare the detail chart
-                        var detailData = [],
-                            detailStart = Date.UTC(2008, 7, 1);
-                        $.each(masterChart.series[0].data, function() {
-                            if (this.x >= detailStart) {
-                                detailData.push(this.y);
-                            }
-                        });
-                        // create a detail chart referenced by a global variable
-                        detailChart = $('#high-datamap').highcharts({
-                            chart: {
-                                type: 'spline',
-                                backgroundColor: 'transparent',
-                                reflow: true,
-                                marginTop: 25,
-                                marginBottom: 0,
-                                marginLeft: 35,
-                                marginRight: 5,
-                                style: {
-                                    position: 'absolute'
-                                }
-                            },
-                            credits: {
-                                enabled: false
-                            },
-                            title: {
-                                text: null
-                            },
-                            subtitle: {
-                                text: null
-                            },
-                            xAxis: {
-                                type: 'datetime',
-                                minorTickLength: 0,
-                                tickLength: 0,
-                                gridLineWidth: 0,
-                                lineWidth: 0,
-                                lineColor: '#ddd',
-                                labels: {
-                                    enabled: false
-                                },
-                            },
-                            yAxis: {
-                                gridLineColor: '#EEE',
-                                lineColor: '#EEE',
-                                tickColor: '#EEE',
-                                tickLength: 10,
-                                showFirstLabel: false,
-                                title: {
-                                    text: null
-                                },
-                                labels: {
-                                    x: -5
-                                },
-                                maxZoom: 0.1
-                            },
-                            tooltip: {
-                                formatter: function() {
-                                    var point = this.points[
-                                        0];
-                                    return '<b>' +
-                                        point.series.name +
-                                        '</b><br/>' +
-                                        Highcharts.dateFormat(
-                                            '%A %B %e %Y',
-                                            this.x) +
-                                        ':<br/>' +
-                                        '1 USD = ' +
-                                        Highcharts.numberFormat(
-                                            point.y, 2) +
-                                        ' EUR';
-                                },
-                                shared: true
-                            },
-                            legend: {
-                                enabled: false
-                            },
-                            plotOptions: {
-                                areaspline: {
-                                    fillOpacity: 0.3,
-                                    marker: {
-                                        enabled: true,
-                                        symbol: 'circle',
-                                        radius: 2,
-                                        states: {
-                                            hover: {
-                                                enabled: true
-                                            }
-                                        }
-                                    }
-                                },
-                                series: {
-                                    marker: {
-                                        enabled: false,
-                                        states: {
-                                            hover: {
-                                                enabled: true,
-                                                radius: 3
-                                            }
-                                        }
-                                    }
-                                }
-                            },
-                            series: [{
-                                name: 'USD to EUR',
-                                pointStart: detailStart,
-                                pointInterval: 24 *
-                                    3600 * 1000,
-                                data: detailData,
-                            }],
-                            exporting: {
-                                enabled: false
-                            }
-                        }).highcharts(); // return chart
-                    }
-                    // create the sibling chart
+            ],
+            detailChart;
 
-                function createMaster() {
-                        $('#high-siblingmap').highcharts({
-                            chart: {
-                                reflow: true,
-                                backgroundColor: 'transparent',
-                                marginLeft: 0,
-                                marginRight: 0,
-                                marginBottom: 30,
-                                zoomType: 'x',
-                                events: {
-                                    // listen to the selection event on the sibling chart to update the
-                                    // extremes of the detail chart
-                                    selection: function(
-                                        event) {
-                                        var
-                                            extremesObject =
-                                            event.xAxis[
-                                                0],
-                                            min =
-                                            extremesObject
-                                            .min,
-                                            max =
-                                            extremesObject
-                                            .max,
-                                            detailData = [],
-                                            xAxis =
-                                            this.xAxis[
-                                                0];
-                                        // reverse engineer the last part of the data
-                                        $.each(this.series[
-                                                0].data,
-                                            function() {
-                                                if (
-                                                    this
-                                                    .x >
-                                                    min &&
-                                                    this
-                                                    .x <
-                                                    max
-                                                ) {
-                                                    detailData
-                                                        .push(
-                                                            [
-                                                                this
-                                                                .x,
-                                                                this
-                                                                .y
-                                                            ]
-                                                        );
-                                                }
-                                            });
-                                        // move the plot bands to reflect the new detail span
-                                        xAxis.removePlotBand(
-                                            'mask-before'
-                                        );
-                                        xAxis.addPlotBand({
-                                            id: 'mask-before',
-                                            from: min,
-                                            to: max,
-                                            color: 'rgba(0, 0, 0, 0.05)',
-                                            borderColor: 'rgba(0,0,0,0.1)',
-                                            borderWidth: 1,
-                                        });
-                                        xAxis.removePlotBand(
-                                            'mask-after'
-                                        );
-                                        detailChart.series[
-                                            0].setData(
-                                            detailData
-                                        );
-                                        return false;
-                                    }
-                                }
-                            },
-                            title: {
-                                text: null
-                            },
-                            xAxis: {
-                                type: 'datetime',
-                                showLastTickLabel: true,
-                                maxZoom: 14 * 24 * 3600000, // fourteen days
-                                plotBands: [{
-                                    id: 'mask-before',
-                                    from: Date.UTC(
-                                        2008, 0,
-                                        1),
-                                    to: Date.UTC(
-                                        2008, 5,
-                                        1),
-                                    color: 'rgba(0, 0, 0, 0.05)',
-                                }],
-                                title: {
-                                    text: null
-                                },
-                                showFirstLabel: false,
-                                showLastLabel: false
-                            },
-                            yAxis: {
-                                gridLineWidth: 0,
-                                // gridLineColor: '#EEE',
-                                labels: {
-                                    enabled: false
-                                },
-                                title: {
-                                    text: null
-                                },
-                                min: 0.6,
-                                showFirstLabel: false
-                            },
-                            tooltip: {
-                                formatter: function() {
-                                    return false;
-                                }
-                            },
-                            legend: {
-                                enabled: false
-                            },
-                            credits: {
-                                enabled: false
-                            },
-                            plotOptions: {
-                                series: {
-                                    fillColor: {
-                                        linearGradient: [
-                                            '0%', '0%',
-                                            '100%',
-                                            '0%'
-                                        ], // Left Top Right Bot
-                                        stops: [
-                                            [0,
-                                                'rgba(74,137,220, 0.75)'
-                                            ],
-                                            [1,
-                                                'rgba(74,137,220, 0.1)'
-                                            ],
-                                        ]
-                                    },
-                                    lineWidth: 1,
-                                    marker: {
-                                        enabled: false
-                                    },
-                                    shadow: false,
-                                    states: {
-                                        hover: {
-                                            lineWidth: 1
-                                        }
-                                    },
-                                    enableMouseTracking: false
-                                }
-                            },
-                            series: [{
-                                type: 'area',
-                                name: 'USD to EUR',
-                                pointInterval: 24 *
-                                    3600 * 1000,
-                                pointStart: Date.UTC(
-                                    2006, 0, 1),
-                                data: data
-                            }],
-                            exporting: {
-                                enabled: false
-                            }
-                        }, function(masterChart) {
-                            createDetail(masterChart);
-                        }).highcharts(); // return chart instance
-                    }
-            // create master and in its callback, create the detail chart
-            createMaster();
-
-        } // end HighChartsAdvanced   
-
-
-        // Color Library we used to grab a random color
-        var sparkColors = {
-            "primary": [bgPrimary, bgPrimaryLr, bgPrimaryDr],
-            "info": [bgInfo, bgInfoLr, bgInfoDr],
-            "warning": [bgWarning, bgWarningLr, bgWarningDr],
-            "success": [bgSuccess, bgSuccessLr, bgSuccessDr],
-            "alert": [bgAlert, bgAlertLr, bgAlertDr]
-        };
-
-
-        // Sparklines Demo
-        var demoSparklines = function() {
-
-             var sparkLine = $('.inlinesparkline');
-             // Init Sparklines
-             if (sparkLine.length) {
-
-                var sparklineInit = function() {
-                        $('.inlinesparkline').each(function(i, e) {
-                            var This = $(this);
-                            var Color = sparkColors["primary"];
-                            var Height = '35';
-                            var Width = '70%';
-                            This.children().remove();
-                            // default color is "primary"
-                            // Color[0] = default shade
-                            // Color[1] = light shade
-                            // Color[2] = dark shade
-                            //alert('hi')
-                            // User assigned color and height, else default
-                            var userColor = This.data('spark-color');
-                            var userHeight = This.data('spark-height');
-                            if (userColor) {
-                                Color = sparkColors[userColor];
-                            }
-                            if (userHeight) {
-                                Height = userHeight;
-                            }
-                            $(e).sparkline('html', {
-                                type: 'line',
-                                width: Width,
-                                height: Height,
-                                enableTagOptions: true,
-                                lineColor: Color[2], // Also tooltip icon color
-                                fillColor: Color[1],
-                                spotColor: Color[0],
-                                minSpotColor: Color[0],
-                                maxSpotColor: Color[0],
-                                highlightSpotColor: bgWarningDr,
-                                highlightLineColor: bgWarningLr
-                            });
-                        });
+        // create the detail chart
+        function createDetail(masterChart) {
+            // prepare the detail chart
+            var detailData = [],
+                detailStart = Date.UTC(2008, 7, 1);
+            $.each(masterChart.series[0].data, function () {
+                if (this.x >= detailStart) {
+                    detailData.push(this.y);
                 }
-
-                // Refresh Sparklines on Resize
-                var refreshSparklines;
-
-                $(window).resize(function(e) {
-                    clearTimeout(refreshSparklines);
-                    refreshSparklines = setTimeout(sparklineInit, 500);
-                });
-
-                sparklineInit();
-            }
-
-        }// End Sparklines Demo
-
-
-        // Circle Graphs Demo
-        var demoCircleGraphs = function() {
-            var infoCircle = $('.info-circle');
-            if (infoCircle.length) {
-                // Color Library we used to grab a random color
-                var colors = {
-                    "primary": [bgPrimary, bgPrimaryLr,
-                        bgPrimaryDr
-                    ],
-                    "info": [bgInfo, bgInfoLr, bgInfoDr],
-                    "warning": [bgWarning, bgWarningLr,
-                        bgWarningDr
-                    ],
-                    "success": [bgSuccess, bgSuccessLr,
-                        bgSuccessDr
-                    ],
-                    "alert": [bgAlert, bgAlertLr, bgAlertDr]
-                };
-                // Store all circles
-                var circles = [];
-                infoCircle.each(function(i, e) {
-                    // Define default color
-                    var color = ['#DDD', bgPrimary];
-                    // Modify color if user has defined one
-                    var targetColor = $(e).data(
-                        'circle-color');
-                    if (targetColor) {
-                        var color = ['#DDD', colors[
-                            targetColor][0]]
+            });
+            // create a detail chart referenced by a global variable
+            detailChart = $('#high-datamap').highcharts({
+                chart: {
+                    type: 'spline',
+                    backgroundColor: 'transparent',
+                    reflow: true,
+                    marginTop: 25,
+                    marginBottom: 0,
+                    marginLeft: 35,
+                    marginRight: 5,
+                    style: {
+                        position: 'absolute'
                     }
-                    // Create all circles
-                    var circle = Circles.create({
-                        id: $(e).attr('id'),
-                        value: $(e).attr('value'),
-                        radius: $(e).width() / 2,
-                        width: 14,
-                        colors: color,
-                        text: function(value) {
-                            var title = $(e).attr('title');
-                            if (title) {
-                                return '<h2 class="circle-text-value">' + value + '</h2><p>' + title + '</p>' 
-                            } 
-                            else {
-                                return '<h2 class="circle-text-value mb5">' + value + '</h2>'
+                },
+                credits: {
+                    enabled: false
+                },
+                title: {
+                    text: null
+                },
+                subtitle: {
+                    text: null
+                },
+                xAxis: {
+                    type: 'datetime',
+                    minorTickLength: 0,
+                    tickLength: 0,
+                    gridLineWidth: 0,
+                    lineWidth: 0,
+                    lineColor: '#ddd',
+                    labels: {
+                        enabled: false
+                    },
+                },
+                yAxis: {
+                    gridLineColor: '#EEE',
+                    lineColor: '#EEE',
+                    tickColor: '#EEE',
+                    tickLength: 10,
+                    showFirstLabel: false,
+                    title: {
+                        text: null
+                    },
+                    labels: {
+                        x: -5
+                    },
+                    maxZoom: 0.1
+                },
+                tooltip: {
+                    formatter: function () {
+                        var point = this.points[
+                            0];
+                        return '<b>' +
+                            point.series.name +
+                            '</b><br/>' +
+                            Highcharts.dateFormat(
+                                '%A %B %e %Y',
+                                this.x) +
+                            ':<br/>' +
+                            '1 USD = ' +
+                            Highcharts.numberFormat(
+                                point.y, 2) +
+                            ' EUR';
+                    },
+                    shared: true
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    areaspline: {
+                        fillOpacity: 0.3,
+                        marker: {
+                            enabled: true,
+                            symbol: 'circle',
+                            radius: 2,
+                            states: {
+                                hover: {
+                                    enabled: true
+                                }
                             }
                         }
-                    });
-                    circles.push(circle);
-                });
+                    },
+                    series: {
+                        marker: {
+                            enabled: false,
+                            states: {
+                                hover: {
+                                    enabled: true,
+                                    radius: 3
+                                }
+                            }
+                        }
+                    }
+                },
+                series: [{
+                    name: 'USD to EUR',
+                    pointStart: detailStart,
+                    pointInterval: 24 *
+                        3600 * 1000,
+                    data: detailData,
+                }],
+                exporting: {
+                    enabled: false
+                }
+            }).highcharts(); // return chart
+        }
 
-                // Add debounced responsive functionality
-                var rescale = function() { 
-                    infoCircle.each(function(i, e) {
-                        var getWidth = $(e).width() / 2;
-                        circles[i].updateRadius(
-                            getWidth);
+        // create the sibling chart
+
+        function createMaster() {
+            $('#high-siblingmap').highcharts({
+                chart: {
+                    reflow: true,
+                    backgroundColor: 'transparent',
+                    marginLeft: 0,
+                    marginRight: 0,
+                    marginBottom: 30,
+                    zoomType: 'x',
+                    events: {
+                        // listen to the selection event on the sibling chart to update the
+                        // extremes of the detail chart
+                        selection: function (
+                            event) {
+                            var
+                                extremesObject =
+                                    event.xAxis[
+                                        0],
+                                min =
+                                    extremesObject
+                                        .min,
+                                max =
+                                    extremesObject
+                                        .max,
+                                detailData = [],
+                                xAxis =
+                                    this.xAxis[
+                                        0];
+                            // reverse engineer the last part of the data
+                            $.each(this.series[
+                                    0].data,
+                                function () {
+                                    if (
+                                        this
+                                            .x >
+                                        min &&
+                                        this
+                                            .x <
+                                        max
+                                    ) {
+                                        detailData
+                                            .push(
+                                                [
+                                                    this
+                                                        .x,
+                                                    this
+                                                        .y
+                                                ]
+                                            );
+                                    }
+                                });
+                            // move the plot bands to reflect the new detail span
+                            xAxis.removePlotBand(
+                                'mask-before'
+                            );
+                            xAxis.addPlotBand({
+                                id: 'mask-before',
+                                from: min,
+                                to: max,
+                                color: 'rgba(0, 0, 0, 0.05)',
+                                borderColor: 'rgba(0,0,0,0.1)',
+                                borderWidth: 1,
+                            });
+                            xAxis.removePlotBand(
+                                'mask-after'
+                            );
+                            detailChart.series[
+                                0].setData(
+                                detailData
+                            );
+                            return false;
+                        }
+                    }
+                },
+                title: {
+                    text: null
+                },
+                xAxis: {
+                    type: 'datetime',
+                    showLastTickLabel: true,
+                    maxZoom: 14 * 24 * 3600000, // fourteen days
+                    plotBands: [{
+                        id: 'mask-before',
+                        from: Date.UTC(
+                            2008, 0,
+                            1),
+                        to: Date.UTC(
+                            2008, 5,
+                            1),
+                        color: 'rgba(0, 0, 0, 0.05)',
+                    }],
+                    title: {
+                        text: null
+                    },
+                    showFirstLabel: false,
+                    showLastLabel: false
+                },
+                yAxis: {
+                    gridLineWidth: 0,
+                    // gridLineColor: '#EEE',
+                    labels: {
+                        enabled: false
+                    },
+                    title: {
+                        text: null
+                    },
+                    min: 0.6,
+                    showFirstLabel: false
+                },
+                tooltip: {
+                    formatter: function () {
+                        return false;
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                credits: {
+                    enabled: false
+                },
+                plotOptions: {
+                    series: {
+                        fillColor: {
+                            linearGradient: [
+                                '0%', '0%',
+                                '100%',
+                                '0%'
+                            ], // Left Top Right Bot
+                            stops: [
+                                [0,
+                                    'rgba(74,137,220, 0.75)'
+                                ],
+                                [1,
+                                    'rgba(74,137,220, 0.1)'
+                                ],
+                            ]
+                        },
+                        lineWidth: 1,
+                        marker: {
+                            enabled: false
+                        },
+                        shadow: false,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        enableMouseTracking: false
+                    }
+                },
+                series: [{
+                    type: 'area',
+                    name: 'USD to EUR',
+                    pointInterval: 24 *
+                        3600 * 1000,
+                    pointStart: Date.UTC(
+                        2006, 0, 1),
+                    data: data
+                }],
+                exporting: {
+                    enabled: false
+                }
+            }, function (masterChart) {
+                createDetail(masterChart);
+            }).highcharts(); // return chart instance
+        }
+
+        // create master and in its callback, create the detail chart
+        createMaster();
+
+    } // end HighChartsAdvanced   
+
+
+    // Color Library we used to grab a random color
+    var sparkColors = {
+        "primary": [bgPrimary, bgPrimaryLr, bgPrimaryDr],
+        "info": [bgInfo, bgInfoLr, bgInfoDr],
+        "warning": [bgWarning, bgWarningLr, bgWarningDr],
+        "success": [bgSuccess, bgSuccessLr, bgSuccessDr],
+        "alert": [bgAlert, bgAlertLr, bgAlertDr]
+    };
+
+
+    // Sparklines Demo
+    var demoSparklines = function () {
+
+        var sparkLine = $('.inlinesparkline');
+        // Init Sparklines
+        if (sparkLine.length) {
+
+            var sparklineInit = function () {
+                $('.inlinesparkline').each(function (i, e) {
+                    var This = $(this);
+                    var Color = sparkColors["primary"];
+                    var Height = '35';
+                    var Width = '70%';
+                    This.children().remove();
+                    // default color is "primary"
+                    // Color[0] = default shade
+                    // Color[1] = light shade
+                    // Color[2] = dark shade
+                    //alert('hi')
+                    // User assigned color and height, else default
+                    var userColor = This.data('spark-color');
+                    var userHeight = This.data('spark-height');
+                    if (userColor) {
+                        Color = sparkColors[userColor];
+                    }
+                    if (userHeight) {
+                        Height = userHeight;
+                    }
+                    $(e).sparkline('html', {
+                        type: 'line',
+                        width: Width,
+                        height: Height,
+                        enableTagOptions: true,
+                        lineColor: Color[2], // Also tooltip icon color
+                        fillColor: Color[1],
+                        spotColor: Color[0],
+                        minSpotColor: Color[0],
+                        maxSpotColor: Color[0],
+                        highlightSpotColor: bgWarningDr,
+                        highlightLineColor: bgWarningLr
                     });
-                    setTimeout(function() {
-                        // Add responsive font sizing functionality
-                        $('.info-circle').find('.circle-text-value').fitText(0.4);
-                    },50);
-                } 
-                var lazyLayout = _.debounce(rescale, 300);
-                $(window).resize(lazyLayout);
-              
+                });
             }
 
-        } // End Circle Graphs Demo
+            // Refresh Sparklines on Resize
+            var refreshSparklines;
 
-        // Helper functions used in widgets.js(this file)
-    	var defineHelpers = function() {
+            $(window).resize(function (e) {
+                clearTimeout(refreshSparklines);
+                refreshSparklines = setTimeout(sparklineInit, 500);
+            });
+
+            sparklineInit();
+        }
+
+    }// End Sparklines Demo
 
 
+    // Circle Graphs Demo
+    var demoCircleGraphs = function () {
+        var infoCircle = $('.info-circle');
+        if (infoCircle.length) {
+            // Color Library we used to grab a random color
+            var colors = {
+                "primary": [bgPrimary, bgPrimaryLr,
+                    bgPrimaryDr
+                ],
+                "info": [bgInfo, bgInfoLr, bgInfoDr],
+                "warning": [bgWarning, bgWarningLr,
+                    bgWarningDr
+                ],
+                "success": [bgSuccess, bgSuccessLr,
+                    bgSuccessDr
+                ],
+                "alert": [bgAlert, bgAlertLr, bgAlertDr]
+            };
+            // Store all circles
+            var circles = [];
+            infoCircle.each(function (i, e) {
+                // Define default color
+                var color = ['#DDD', bgPrimary];
+                // Modify color if user has defined one
+                var targetColor = $(e).data(
+                    'circle-color');
+                if (targetColor) {
+                    var color = ['#DDD', colors[
+                        targetColor][0]]
+                }
+                // Create all circles
+                var circle = Circles.create({
+                    id: $(e).attr('id'),
+                    value: $(e).attr('value'),
+                    radius: $(e).width() / 2,
+                    width: 14,
+                    colors: color,
+                    text: function (value) {
+                        var title = $(e).attr('title');
+                        if (title) {
+                            return '<h2 class="circle-text-value">' + value + '</h2><p>' + title + '</p>'
+                        } else {
+                            return '<h2 class="circle-text-value mb5">' + value + '</h2>'
+                        }
+                    }
+                });
+                circles.push(circle);
+            });
 
-		}
+            // Add debounced responsive functionality
+            var rescale = function () {
+                infoCircle.each(function (i, e) {
+                    var getWidth = $(e).width() / 2;
+                    circles[i].updateRadius(
+                        getWidth);
+                });
+                setTimeout(function () {
+                    // Add responsive font sizing functionality
+                    $('.info-circle').find('.circle-text-value').fitText(0.4);
+                }, 50);
+            }
+            var lazyLayout = _.debounce(rescale, 300);
+            $(window).resize(lazyLayout);
+
+        }
+
+    } // End Circle Graphs Demo
+
+    // Helper functions used in widgets.js(this file)
+    var defineHelpers = function () {
 
 
-	return {
+    }
+
+
+    return {
         init: function () {
 
             // Init Demo Charts 
@@ -1301,12 +1301,12 @@ var demoHighCharts = function () {
 
             defineHelpers();
 
-            if ($('#high-datamap').length) { 
+            if ($('#high-datamap').length) {
                 demoHighChartsAdvanced();
             }
 
         }
-	} 
+    }
 }();
 
 

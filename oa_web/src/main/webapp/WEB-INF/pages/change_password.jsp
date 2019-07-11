@@ -27,7 +27,8 @@
                         <div class="section row">
                             <div class="col-md-6">
                                 <label for="new1" class="field prepend-icon">
-                                    <input type="password" name="new1" id="new1" class="gui-input" placeholder="重复密码...">
+                                    <input type="password" name="new1" id="new1" class="gui-input"
+                                           placeholder="重复密码...">
                                     <label for="new1" class="field-icon">
                                         <i class="fa fa-lock"></i>
                                     </label>
@@ -35,7 +36,8 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="new2" class="field prepend-icon">
-                                    <input type="password" name="new2" id="new2" class="gui-input" placeholder="重复密码...">
+                                    <input type="password" name="new2" id="new2" class="gui-input"
+                                           placeholder="重复密码...">
                                     <label for="new2" class="field-icon">
                                         <i class="fa fa-lock"></i>
                                     </label>
@@ -43,8 +45,9 @@
                             </div>
                         </div>
                         <div class="panel-footer text-right">
-                            <button type="submit" class="button"> 修改 </button>
-                            <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回 </button>
+                            <button type="submit" class="button"> 修改</button>
+                            <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回
+                            </button>
                         </div>
                     </div>
                 </form>

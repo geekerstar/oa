@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <title>欢迎使用极客文库办公自动化系统</title>
-    <meta name="keywords" content="HTML5 Bootstrap 3 Admin Template UI Theme" />
+    <meta name="keywords" content="HTML5 Bootstrap 3 Admin Template UI Theme"/>
     <meta name="description" content="AbsoluteAdmin - A Responsive HTML5 Admin UI Framework">
     <meta name="author" content="AbsoluteAdmin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +38,8 @@
                             <div class="section">
                                 <label for="password" class="field-label text-muted fs18 mb10">密码</label>
                                 <label for="password" class="field prepend-icon">
-                                    <input type="password" name="password" id="password" class="gui-input" placeholder="请输入密码...">
+                                    <input type="password" name="password" id="password" class="gui-input"
+                                           placeholder="请输入密码...">
                                     <label for="password" class="field-icon">
                                         <i class="fa fa-lock"></i>
                                     </label>

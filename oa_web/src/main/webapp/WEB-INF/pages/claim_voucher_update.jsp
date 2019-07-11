@@ -31,40 +31,44 @@
                         </div>
                         <div class="section row" id="items">
                             <c:forEach items="${info.items}" varStatus="sta">
-                            <div>
-                                <div class="col-md-3">
-                                    <label for="items[${sta.index}].item" class="field prepend-icon">
-                                        <form:hidden path="items[${sta.index}].id"/>
-                                        <form:hidden path="items[${sta.index}].claimVoucherId"/>
-                                        <form:select path="items[${sta.index}].item" cssClass="gui-input" placeholder="花销类型..." items="${items}"/>
-                                    </label>
-                                </div>
-                                <div class="col-md-3">
-                                    <label for="items[${sta.index}].amount" class="field prepend-icon">
-                                        <form:input path="items[${sta.index}].amount" cssClass="gui-input money" placeholder="金额..."/>
-                                        <label for="items[${sta.index}].amount" class="field-icon">
-                                            <i class="fa fa-lock"></i>
+                                <div>
+                                    <div class="col-md-3">
+                                        <label for="items[${sta.index}].item" class="field prepend-icon">
+                                            <form:hidden path="items[${sta.index}].id"/>
+                                            <form:hidden path="items[${sta.index}].claimVoucherId"/>
+                                            <form:select path="items[${sta.index}].item" cssClass="gui-input"
+                                                         placeholder="花销类型..." items="${items}"/>
                                         </label>
-                                    </label>
-                                </div>
-                                <div class="col-md-5">
-                                    <label for="items[${sta.index}].comment" class="field prepend-icon">
-                                        <form:input path="items[${sta.index}].comment" cssClass="gui-input" placeholder="备注..." />
-                                        <label for="items[${sta.index}].comment" class="field-icon">
-                                            <i class="fa fa-lock"></i>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="items[${sta.index}].amount" class="field prepend-icon">
+                                            <form:input path="items[${sta.index}].amount" cssClass="gui-input money"
+                                                        placeholder="金额..."/>
+                                            <label for="items[${sta.index}].amount" class="field-icon">
+                                                <i class="fa fa-lock"></i>
+                                            </label>
                                         </label>
-                                    </label>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <label for="items[${sta.index}].comment" class="field prepend-icon">
+                                            <form:input path="items[${sta.index}].comment" cssClass="gui-input"
+                                                        placeholder="备注..."/>
+                                            <label for="items[${sta.index}].comment" class="field-icon">
+                                                <i class="fa fa-lock"></i>
+                                            </label>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-1" style="text-align:right;">
+                                        <button type="button" class="button"> X</button>
+                                    </div>
                                 </div>
-                                <div class="col-md-1" style="text-align:right;">
-                                    <button type="button" class="button"> X </button>
-                                </div>
-                            </div>
                             </c:forEach>
                         </div>
                         <div class="section row">
                             <div class="col-md-3">
                                 <label for="totalMoney" class="field prepend-icon">
-                                    <form:input id="totalMoney" path="claimVoucher.totalAmount" cssClass="gui-input" placeholder="总金额..." readonly="true"/>
+                                    <form:input id="totalMoney" path="claimVoucher.totalAmount" cssClass="gui-input"
+                                                placeholder="总金额..." readonly="true"/>
                                     <label for="totalMoney" class="field-icon">
                                         <i class="fa fa-user"></i>
                                     </label>
@@ -72,13 +76,14 @@
                             </div>
                             <div class="section" style="text-align:right;">
                                 <div class="col-md-9">
-                                    <button type="button" class="button" id="addItemButton"> + </button>
+                                    <button type="button" class="button" id="addItemButton"> +</button>
                                 </div>
                             </div>
                         </div>
                         <div class="panel-footer text-right">
-                            <button type="submit" class="button"> 保存 </button>
-                            <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回 </button>
+                            <button type="submit" class="button"> 保存</button>
+                            <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回
+                            </button>
                         </div>
                     </div>
                 </form:form>

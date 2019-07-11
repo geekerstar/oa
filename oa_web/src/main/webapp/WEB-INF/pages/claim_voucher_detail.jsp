@@ -36,9 +36,9 @@
                     </div>
                     <div class="section row">
                         <C:forEach items="${items}" var="item">
-                        <div class="col-md-3">${item.item}</div>
-                        <div class="col-md-3">${item.amount}</div>
-                        <div class="col-md-5">${item.comment}</div>
+                            <div class="col-md-3">${item.item}</div>
+                            <div class="col-md-3">${item.amount}</div>
+                            <div class="col-md-5">${item.comment}</div>
                         </C:forEach>
                     </div>
                     <div class="section row">
@@ -49,16 +49,16 @@
                         <span> 处理流程 </span>
                     </div>
                     <div class="section row">
-                    <c:forEach items="${records}" var="record">
-                        <div class="col-md-1">${record.dealer.name}</div>
-                        <div class="col-md-3"><spring:eval expression="record.dealTime"/></div>
-                        <div class="col-md-1">${record.dealWay}</div>
-                        <div class="col-md-2">${record.dealWay}</div>
-                        <div class="col-md-5">备注：${record.comment}</div>
-                    </c:forEach>
+                        <c:forEach items="${records}" var="record">
+                            <div class="col-md-1">${record.dealer.name}</div>
+                            <div class="col-md-3"><spring:eval expression="record.dealTime"/></div>
+                            <div class="col-md-1">${record.dealWay}</div>
+                            <div class="col-md-2">${record.dealWay}</div>
+                            <div class="col-md-5">备注：${record.comment}</div>
+                        </c:forEach>
                     </div>
                     <div class="panel-footer text-right">
-                        <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回 </button>
+                        <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回</button>
                     </div>
                 </div>
             </div>

@@ -31,12 +31,14 @@
                             <div>
                                 <div class="col-md-3">
                                     <label for="items[0].item" class="field prepend-icon">
-                                        <form:select path="items[0].item" cssClass="gui-input" placeholder="花销类型..." items="${items}"/>
+                                        <form:select path="items[0].item" cssClass="gui-input" placeholder="花销类型..."
+                                                     items="${items}"/>
                                     </label>
                                 </div>
                                 <div class="col-md-3">
                                     <label for="items[0].amount" class="field prepend-icon">
-                                        <form:input path="items[0].amount" cssClass="gui-input money" placeholder="金额..."/>
+                                        <form:input path="items[0].amount" cssClass="gui-input money"
+                                                    placeholder="金额..."/>
                                         <label for="items[0].amount" class="field-icon">
                                             <i class="fa fa-lock"></i>
                                         </label>
@@ -44,21 +46,22 @@
                                 </div>
                                 <div class="col-md-5">
                                     <label for="items[0].comment" class="field prepend-icon">
-                                        <form:input path="items[0].comment" cssClass="gui-input" placeholder="备注..." />
+                                        <form:input path="items[0].comment" cssClass="gui-input" placeholder="备注..."/>
                                         <label for="items[0].comment" class="field-icon">
                                             <i class="fa fa-lock"></i>
                                         </label>
                                     </label>
                                 </div>
                                 <div class="col-md-1" style="text-align:right;">
-                                    <button type="button" class="button"> X </button>
+                                    <button type="button" class="button"> X</button>
                                 </div>
                             </div>
                         </div>
                         <div class="section row">
                             <div class="col-md-3">
                                 <label for="totalMoney" class="field prepend-icon">
-                                    <form:input id="totalMoney" path="claimVoucher.totalAmount" cssClass="gui-input" placeholder="总金额..." readonly="true"/>
+                                    <form:input id="totalMoney" path="claimVoucher.totalAmount" cssClass="gui-input"
+                                                placeholder="总金额..." readonly="true"/>
                                     <label for="totalMoney" class="field-icon">
                                         <i class="fa fa-user"></i>
                                     </label>
@@ -66,13 +69,14 @@
                             </div>
                             <div class="section" style="text-align:right;">
                                 <div class="col-md-9">
-                                    <button type="button" class="button" id="addItemButton"> + </button>
+                                    <button type="button" class="button" id="addItemButton"> +</button>
                                 </div>
                             </div>
                         </div>
                         <div class="panel-footer text-right">
-                            <button type="submit" class="button"> 保存 </button>
-                            <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回 </button>
+                            <button type="submit" class="button"> 保存</button>
+                            <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回
+                            </button>
                         </div>
                     </div>
                 </form:form>

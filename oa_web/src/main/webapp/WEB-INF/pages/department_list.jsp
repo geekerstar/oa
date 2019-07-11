@@ -22,7 +22,8 @@
                                     <i class="fa fa-trash"></i>
                                 </button>
                                 <button type="button" class="btn btn-default light">
-                                    <i class="fa fa-plus" onclick="javascript:window.location.href='/department/to_add';"></i>
+                                    <i class="fa fa-plus"
+                                       onclick="javascript:window.location.href='/department/to_add';"></i>
                                 </button>
                             </div>
                         </div>
@@ -51,21 +52,21 @@
                         </thead>
                         <tbody>
                         <c:forEach items="${list}" var="dept">
-                        <tr class="message-unread">
-                            <td class="hidden-xs">
-                                <label class="option block mn">
-                                    <input type="checkbox" name="mobileos" value="FR">
-                                    <span class="checkbox mn"></span>
-                                </label>
-                            </td>
-                            <td>${dept.sn}</td>
-                            <td>${dept.name}</td>
-                            <td>${dept.address}</td>
-                            <td>
-                                <a href="/department/to_update?sn=${dept.sn}">编辑</a>
-                                <a href="/department/remove?sn=${dept.sn}">删除</a>
-                            </td>
-                        </tr>
+                            <tr class="message-unread">
+                                <td class="hidden-xs">
+                                    <label class="option block mn">
+                                        <input type="checkbox" name="mobileos" value="FR">
+                                        <span class="checkbox mn"></span>
+                                    </label>
+                                </td>
+                                <td>${dept.sn}</td>
+                                <td>${dept.name}</td>
+                                <td>${dept.address}</td>
+                                <td>
+                                    <a href="/department/to_update?sn=${dept.sn}">编辑</a>
+                                    <a href="/department/remove?sn=${dept.sn}">删除</a>
+                                </td>
+                            </tr>
                         </c:forEach>
                         </tbody>
                     </table>

@@ -9,7 +9,7 @@
  *
  */
 
-(function($, window, undefined) {
+(function ($, window, undefined) {
 
     "use strict";
 
@@ -19,9 +19,9 @@
         /*
             PUBLIC : SETUP LAZY LINE DATA
         */
-        init: function(_options) {
+        init: function (_options) {
 
-            return this.each(function() {
+            return this.each(function () {
 
                 var $this = $(this);
                 var data = $this.data(dataKey);
@@ -80,11 +80,11 @@
         /*
             PUBLIC : PAINT LAZY LINE DATA
         */
-        paint: function() {
-            return this.each(function() {
+        paint: function () {
+            return this.each(function () {
                 var $this = $(this);
                 var data = $this.data(dataKey);
-                var init = function() {
+                var init = function () {
                     // Set width / height of container element
                     $this.css({
                         'width': data.width,
@@ -121,7 +121,7 @@
                     }
 
                     data.totalDuration = (data.drawSequential) ? data.playhead : data.longestDuration;
-                    data.rAF = requestAnimationFrame(function(timestamp) {
+                    data.rAF = requestAnimationFrame(function (timestamp) {
                         draw(timestamp, data);
                     });
                 };
@@ -138,9 +138,9 @@
         /*
             TOGGLE PAUSE/RESUME ANIMATION
         */
-        pauseResume: function() {
+        pauseResume: function () {
 
-            return this.each(function() {
+            return this.each(function () {
 
                 var data = $(this).data(dataKey);
 
@@ -150,7 +150,7 @@
                 } else {
                     data.paused = false;
                     // resume
-                    requestAnimationFrame(function(timestamp) {
+                    requestAnimationFrame(function (timestamp) {
                         adjustStartTime(timestamp, data)
                     });
                 }
@@ -159,9 +159,9 @@
         /*
             ERASE LAZY LINE DATA
         */
-        erase: function() {
+        erase: function () {
 
-            return this.each(function() {
+            return this.each(function () {
                 var $this = $(this);
                 $this.removeData(dataKey);
                 $this.find('svg').empty();
@@ -172,9 +172,9 @@
         /*
             DESTROY LAZY LINE DATA & ELEMENT
         */
-        destroy: function() {
+        destroy: function () {
 
-            return this.each(function() {
+            return this.each(function () {
 
                 var $this = $(this);
                 $this.removeData(dataKey);
@@ -184,14 +184,14 @@
         /*
             STAMP LAZY LINE DATA
         */
-        stamp: function() {
+        stamp: function () {
 
-            return this.each(function() {
+            return this.each(function () {
 
                 var $this = $(this),
                     d = $this.data(dataKey);
 
-                var init = function() {
+                var init = function () {
 
                     // Set width / height of container element
                     $this.css({
@@ -216,14 +216,14 @@
         }
     };
 
-    var adjustStartTime = function(timestamp, o) {
+    var adjustStartTime = function (timestamp, o) {
         o.startTime = timestamp - o.elapsed_time;
-        requestAnimationFrame(function(timestamp) {
+        requestAnimationFrame(function (timestamp) {
             draw(timestamp, o);
         });
     }
 
-    var draw = function(timestamp, o) {
+    var draw = function (timestamp, o) {
 
         if (o.startTime == null) {
             o.startTime = timestamp;
@@ -251,7 +251,7 @@
 
         // whether to continue
         if (o.elapsed_time < o.totalDuration) {
-            o.rAF = requestAnimationFrame(function(timestamp) {
+            o.rAF = requestAnimationFrame(function (timestamp) {
                 draw(timestamp, o);
             });
         } else {
@@ -259,7 +259,7 @@
         }
     }
 
-    var applyStyles = function(data, value) {
+    var applyStyles = function (data, value) {
 
         var styles = {
             "stroke": (!value.strokeColor) ? data.strokeColor : value.strokeColor,
@@ -277,7 +277,7 @@
     /*
         PRIVATE : SET PATH DATA
     */
-    var getPath = function(data, i) {
+    var getPath = function (data, i) {
         var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
         var $path = $(path);
         data.svg.append($path);
@@ -288,7 +288,7 @@
     /*
         PRIVATE : GET STYLE DATA
     */
-    var getAttributes = function(data, value) {
+    var getAttributes = function (data, value) {
         var attributes = {
             "d": value.path,
             "stroke": (!value.strokeColor) ? data.strokeColor : value.strokeColor,
@@ -309,7 +309,7 @@
     /*
         PRIVATE : GET STYLE DATA
     */
-    var getSVGElement = function(attr) {
+    var getSVGElement = function (attr) {
         var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
         svg.setAttributeNS(null, 'viewBox', attr.viewBox);
         svg.setAttributeNS(null, 'preserveAspectRatio', attr.preserveAspectRatio);
@@ -317,7 +317,7 @@
         return svg;
     };
 
-    $.fn.lazylinepainter = function(method) {
+    $.fn.lazylinepainter = function (method) {
         if (methods[method]) {
             return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
         } else if (typeof method === 'object' || !method) {

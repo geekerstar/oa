@@ -7,7 +7,226 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23e95338-5b35-4d44-804c-9562335e6489" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_biz/src/main/java/com/geekerstar/oa/biz/ClaimVoucherBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_biz/src/main/java/com/geekerstar/oa/biz/ClaimVoucherBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_biz/src/main/java/com/geekerstar/oa/biz/DepartmentBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_biz/src/main/java/com/geekerstar/oa/biz/DepartmentBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_biz/src/main/java/com/geekerstar/oa/biz/EmployeeBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_biz/src/main/java/com/geekerstar/oa/biz/EmployeeBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_biz/src/main/java/com/geekerstar/oa/biz/GlobalBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_biz/src/main/java/com/geekerstar/oa/biz/GlobalBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_biz/src/main/java/com/geekerstar/oa/biz/impl/ClaimVoucherBizImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_biz/src/main/java/com/geekerstar/oa/biz/impl/ClaimVoucherBizImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_biz/src/main/java/com/geekerstar/oa/biz/impl/EmployeeBizImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_biz/src/main/java/com/geekerstar/oa/biz/impl/EmployeeBizImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_biz/src/main/java/com/geekerstar/oa/biz/impl/GlobalBizImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_biz/src/main/java/com/geekerstar/oa/biz/impl/GlobalBizImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_dao/src/main/java/com/geekerstar/oa/dao/ClaimVoucherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_dao/src/main/java/com/geekerstar/oa/dao/ClaimVoucherDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_dao/src/main/java/com/geekerstar/oa/dao/ClaimVoucherItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_dao/src/main/java/com/geekerstar/oa/dao/ClaimVoucherItemDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_dao/src/main/java/com/geekerstar/oa/dao/DealRecordDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_dao/src/main/java/com/geekerstar/oa/dao/DealRecordDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_dao/src/main/java/com/geekerstar/oa/dao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_dao/src/main/java/com/geekerstar/oa/dao/DepartmentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_dao/src/main/java/com/geekerstar/oa/dao/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_dao/src/main/java/com/geekerstar/oa/dao/EmployeeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_dao/src/main/java/com/geekerstar/oa/global/Contant.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_dao/src/main/java/com/geekerstar/oa/global/Contant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_dao/src/main/resources/com/geekerstar/oa/dao/EmployeeDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oa_dao/src/main/resources/com/geekerstar/oa/dao/EmployeeDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_dao/target/classes/com/geekerstar/oa/dao/EmployeeDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oa_dao/target/classes/com/geekerstar/oa/dao/EmployeeDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/java/com/geekerstar/oa/controller/ClaimVoucherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/java/com/geekerstar/oa/controller/ClaimVoucherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/java/com/geekerstar/oa/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/java/com/geekerstar/oa/controller/DepartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/java/com/geekerstar/oa/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/java/com/geekerstar/oa/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/java/com/geekerstar/oa/controller/GloablController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/java/com/geekerstar/oa/controller/GloablController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/java/com/geekerstar/oa/global/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/java/com/geekerstar/oa/global/EncodingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/java/com/geekerstar/oa/global/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/java/com/geekerstar/oa/global/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/bottom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/bottom.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/change_password.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/change_password.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/claim_voucher_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/claim_voucher_add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/claim_voucher_check.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/claim_voucher_check.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/claim_voucher_deal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/claim_voucher_deal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/claim_voucher_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/claim_voucher_detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/claim_voucher_self.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/claim_voucher_self.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/claim_voucher_update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/claim_voucher_update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/department_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/department_add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/department_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/department_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/department_update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/department_update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/employee_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/employee_add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/employee_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/employee_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/employee_update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/employee_update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/self.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/pages/self.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/admin-tools/admin-forms/css/admin-forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/admin-tools/admin-forms/css/admin-forms.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/admindesigns/admindesigns.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/admindesigns/admindesigns.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/font-awesome/fontawesome-webfonte0a5.html" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/font-awesome/fontawesome-webfonte0a5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/font-awesome/fontawesome-webfonte0a5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/font-awesome/fontawesome-webfonte0a5.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/glyphicons-pro/glyphicons-pro.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/glyphicons-pro/glyphicons-pro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/glyphicons-pro/glyphicons-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/glyphicons-pro/glyphicons-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/glyphicons/glyphicons-halflings-regular.html" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/glyphicons/glyphicons-halflings-regular.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/glyphicons/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/glyphicons/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/icomoon/icomoon.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/icomoon/icomoon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/icomoon/icomoon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/icomoon/icomoon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/iconsweets/IconSweets-Deluxe.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/iconsweets/IconSweets-Deluxe.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/iconsweets/iconsweets.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/iconsweets/iconsweets.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/octicons/octicons.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/octicons/octicons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/octicons/octicons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/octicons/octicons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/stateface/stateface-regular-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/stateface/stateface-regular-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/stateface/stateface.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/stateface/stateface.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/zocial/zocial-regular-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/zocial/zocial-regular-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/zocial/zocial.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/fonts/zocial/zocial.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/img/patterns/noise.html" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/img/patterns/noise.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/img/patterns/topbar-bg3.html" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/img/patterns/topbar-bg3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/js/demo/charts/d3.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/js/demo/charts/d3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/js/demo/charts/flot.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/js/demo/charts/flot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/js/demo/charts/highcharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/js/demo/charts/highcharts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/js/demo/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/js/demo/demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/js/demo/widgets.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/js/demo/widgets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/js/utility/utility.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/js/utility/utility.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/skin/default_skin/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/skin/default_skin/css/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/skin/default_skin/img/plugins/slider-knob.html" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/assets/skin/default_skin/img/plugins/slider-knob.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/js/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/js/items.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/js/pages.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/js/pages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/bstimeout/bs-timeout.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/bstimeout/bs-timeout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/bstour/bootstrap-tour.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/bstour/bootstrap-tour.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/bstour/bootstrap-tour.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/bstour/bootstrap-tour.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/canvasbg/canvasbg.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/canvasbg/canvasbg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/circles/circles.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/circles/circles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/datatables/extensions/Editor/css/dataTables.editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/datatables/extensions/Editor/css/dataTables.editor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/datatables/extensions/Editor/js/dataTables.editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/datatables/extensions/Editor/js/dataTables.editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/datatables/extensions/Editor/js/editor.bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/datatables/extensions/Editor/js/editor.bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/datatables/media/css/dataTables.bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/datatables/media/css/dataTables.bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/datatables/media/css/dataTables.plugins.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/datatables/media/css/dataTables.plugins.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/datatables/media/js/dataTables.bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/datatables/media/js/dataTables.bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/datepicker/css/bootstrap-datetimepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/datepicker/css/bootstrap-datetimepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/daterange/daterangepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/daterange/daterangepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/dropzone/css/dropzone.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/dropzone/css/dropzone.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/fancytree/extensions/jquery.fancytree.childcounter.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/fancytree/extensions/jquery.fancytree.childcounter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/fancytree/extensions/jquery.fancytree.columnview.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/fancytree/extensions/jquery.fancytree.columnview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/fancytree/extensions/jquery.fancytree.dnd.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/fancytree/extensions/jquery.fancytree.dnd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/fancytree/extensions/jquery.fancytree.edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/fancytree/extensions/jquery.fancytree.edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/fancytree/extensions/jquery.fancytree.filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/fancytree/extensions/jquery.fancytree.filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/footable/css/fonts/footable.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/footable/css/fonts/footable.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/highlight/styles/github.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/highlight/styles/github.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/highlight/styles/googlecode.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/highlight/styles/googlecode.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/jvectormap/assets/jquery-jvectormap-us-lcc-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/jvectormap/assets/jquery-jvectormap-us-lcc-en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/jvectormap/assets/jquery-jvectormap-world-mill-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/jvectormap/assets/jquery-jvectormap-world-mill-en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/lazyline/jquery.lazylinepainter-1.5.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/lazyline/jquery.lazylinepainter-1.5.0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/magnific/jquery.magnific-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/magnific/jquery.magnific-popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/magnific/magnific-popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/magnific/magnific-popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/mapplic/js/hammer.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/mapplic/js/hammer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/mapplic/js/jquery.easing.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/mapplic/js/jquery.easing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/mapplic/js/jquery.mousewheel.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/mapplic/js/jquery.mousewheel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/mapplic/mapplic/mapplic.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/mapplic/mapplic/mapplic.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/mapplic/mapplic/mapplic.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/mapplic/mapplic/mapplic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/markdown/bootstrap-markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/markdown/bootstrap-markdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/markdown/markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/markdown/markdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/markdown/to-markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/markdown/to-markdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/nestable/jquery.nestable.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/nestable/jquery.nestable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/nestable/nestable.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/nestable/nestable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/nprogress/nprogress.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/nprogress/nprogress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/pnotify/pnotify.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/pnotify/pnotify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/select2/css/core.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/select2/css/core.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/slick/fonts/slick.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/slick/fonts/slick.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/slick/slick.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/slick/slick.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/slick/slick.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/slick/slick.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/tagmanager/tagmanager.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/tagmanager/tagmanager.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/tagmanager/tagmanager.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/tagmanager/tagmanager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/xeditable/css/bootstrap-editable.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/xeditable/css/bootstrap-editable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/xeditable/inputs/address/address.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/xeditable/inputs/address/address.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/xeditable/inputs/address/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/xeditable/inputs/address/address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/xeditable/inputs/typeaheadjs/lib/typeahead.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/xeditable/inputs/typeaheadjs/lib/typeahead.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/xeditable/inputs/typeaheadjs/lib/typeahead.js-bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/xeditable/inputs/typeaheadjs/lib/typeahead.js-bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/xeditable/inputs/typeaheadjs/typeaheadjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/src/main/webapp/vendor/plugins/xeditable/inputs/typeaheadjs/typeaheadjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/bottom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/bottom.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/change_password.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/change_password.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/claim_voucher_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/claim_voucher_add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/claim_voucher_check.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/claim_voucher_check.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/claim_voucher_deal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/claim_voucher_deal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/claim_voucher_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/claim_voucher_detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/claim_voucher_self.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/claim_voucher_self.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/claim_voucher_update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/claim_voucher_update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/department_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/department_add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/department_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/department_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/department_update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/department_update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/employee_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/employee_add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/employee_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/employee_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/employee_update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/employee_update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/self.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/WEB-INF/pages/self.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/admin-tools/admin-forms/css/admin-forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/admin-tools/admin-forms/css/admin-forms.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/admindesigns/admindesigns.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/admindesigns/admindesigns.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/font-awesome/fontawesome-webfonte0a5.html" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/font-awesome/fontawesome-webfonte0a5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/font-awesome/fontawesome-webfonte0a5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/font-awesome/fontawesome-webfonte0a5.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/glyphicons-pro/glyphicons-pro.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/glyphicons-pro/glyphicons-pro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/glyphicons-pro/glyphicons-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/glyphicons-pro/glyphicons-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/glyphicons/glyphicons-halflings-regular.html" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/glyphicons/glyphicons-halflings-regular.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/glyphicons/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/glyphicons/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/icomoon/icomoon.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/icomoon/icomoon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/icomoon/icomoon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/icomoon/icomoon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/iconsweets/IconSweets-Deluxe.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/iconsweets/IconSweets-Deluxe.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/iconsweets/iconsweets.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/iconsweets/iconsweets.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/octicons/octicons.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/octicons/octicons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/octicons/octicons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/octicons/octicons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/stateface/stateface-regular-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/stateface/stateface-regular-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/stateface/stateface.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/stateface/stateface.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/zocial/zocial-regular-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/zocial/zocial-regular-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/zocial/zocial.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/fonts/zocial/zocial.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/img/patterns/noise.html" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/img/patterns/noise.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/img/patterns/topbar-bg3.html" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/img/patterns/topbar-bg3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/js/demo/charts/d3.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/js/demo/charts/d3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/js/demo/charts/flot.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/js/demo/charts/flot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/js/demo/charts/highcharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/js/demo/charts/highcharts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/js/demo/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/js/demo/demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/js/demo/widgets.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/js/demo/widgets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/js/utility/utility.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/js/utility/utility.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/skin/default_skin/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/skin/default_skin/css/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/assets/skin/default_skin/img/plugins/slider-knob.html" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/assets/skin/default_skin/img/plugins/slider-knob.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/js/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/js/items.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/js/pages.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/js/pages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/bstimeout/bs-timeout.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/bstimeout/bs-timeout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/bstour/bootstrap-tour.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/bstour/bootstrap-tour.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/bstour/bootstrap-tour.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/bstour/bootstrap-tour.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/canvasbg/canvasbg.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/canvasbg/canvasbg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/circles/circles.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/circles/circles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/datatables/extensions/Editor/css/dataTables.editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/datatables/extensions/Editor/css/dataTables.editor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/datatables/extensions/Editor/js/dataTables.editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/datatables/extensions/Editor/js/dataTables.editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/datatables/extensions/Editor/js/editor.bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/datatables/extensions/Editor/js/editor.bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/datatables/media/css/dataTables.bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/datatables/media/css/dataTables.bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/datatables/media/css/dataTables.plugins.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/datatables/media/css/dataTables.plugins.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/datatables/media/js/dataTables.bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/datatables/media/js/dataTables.bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/datepicker/css/bootstrap-datetimepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/datepicker/css/bootstrap-datetimepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/daterange/daterangepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/daterange/daterangepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/dropzone/css/dropzone.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/dropzone/css/dropzone.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/fancytree/extensions/jquery.fancytree.childcounter.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/fancytree/extensions/jquery.fancytree.childcounter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/fancytree/extensions/jquery.fancytree.columnview.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/fancytree/extensions/jquery.fancytree.columnview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/fancytree/extensions/jquery.fancytree.dnd.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/fancytree/extensions/jquery.fancytree.dnd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/fancytree/extensions/jquery.fancytree.edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/fancytree/extensions/jquery.fancytree.edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/fancytree/extensions/jquery.fancytree.filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/fancytree/extensions/jquery.fancytree.filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/footable/css/fonts/footable.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/footable/css/fonts/footable.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/highlight/styles/github.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/highlight/styles/github.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/highlight/styles/googlecode.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/highlight/styles/googlecode.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/jvectormap/assets/jquery-jvectormap-us-lcc-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/jvectormap/assets/jquery-jvectormap-us-lcc-en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/jvectormap/assets/jquery-jvectormap-world-mill-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/jvectormap/assets/jquery-jvectormap-world-mill-en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/lazyline/jquery.lazylinepainter-1.5.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/lazyline/jquery.lazylinepainter-1.5.0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/magnific/jquery.magnific-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/magnific/jquery.magnific-popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/magnific/magnific-popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/magnific/magnific-popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/mapplic/js/hammer.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/mapplic/js/hammer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/mapplic/js/jquery.easing.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/mapplic/js/jquery.easing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/mapplic/js/jquery.mousewheel.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/mapplic/js/jquery.mousewheel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/mapplic/mapplic/mapplic.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/mapplic/mapplic/mapplic.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/mapplic/mapplic/mapplic.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/mapplic/mapplic/mapplic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/markdown/bootstrap-markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/markdown/bootstrap-markdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/markdown/markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/markdown/markdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/markdown/to-markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/markdown/to-markdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/nestable/jquery.nestable.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/nestable/jquery.nestable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/nestable/nestable.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/nestable/nestable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/nprogress/nprogress.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/nprogress/nprogress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/pnotify/pnotify.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/pnotify/pnotify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/select2/css/core.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/select2/css/core.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/slick/fonts/slick.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/slick/fonts/slick.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/slick/slick.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/slick/slick.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/slick/slick.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/slick/slick.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/tagmanager/tagmanager.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/tagmanager/tagmanager.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/tagmanager/tagmanager.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/tagmanager/tagmanager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/xeditable/css/bootstrap-editable.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/xeditable/css/bootstrap-editable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/xeditable/inputs/address/address.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/xeditable/inputs/address/address.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/xeditable/inputs/address/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/xeditable/inputs/address/address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/xeditable/inputs/typeaheadjs/lib/typeahead.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/xeditable/inputs/typeaheadjs/lib/typeahead.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/xeditable/inputs/typeaheadjs/lib/typeahead.js-bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/xeditable/inputs/typeaheadjs/lib/typeahead.js-bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/xeditable/inputs/typeaheadjs/typeaheadjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/oa_web/target/oa_web/vendor/plugins/xeditable/inputs/typeaheadjs/typeaheadjs.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,67 +239,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1429614599">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="52" />
-          <entry key="js" value="1" />
-          <entry key="jsp" value="54" />
-          <entry key="md" value="2" />
-          <entry key="xml" value="29" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="52" />
-          <entry key="JSP" value="54" />
-          <entry key="JavaScript" value="1" />
-          <entry key="Markdown" value="2" />
-          <entry key="XML" value="29" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="1" />
-          <entry key="jsp" value="90" />
-          <entry key="md" value="52" />
-          <entry key="xml" value="30" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="1" />
-          <entry key="JSP" value="90" />
-          <entry key="Markdown" value="52" />
-          <entry key="XML" value="30" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="240">
-                <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -142,12 +302,6 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -170,7 +324,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="57" />
     <option name="y" value="47" />
     <option name="width" value="1400" />
@@ -184,8 +338,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,17 +348,62 @@
             <path>
               <item name="oa" type="b2602c69:ProjectViewProjectNode" />
               <item name="oa" type="462c0819:PsiDirectoryNode" />
-              <item name="pics" type="462c0819:PsiDirectoryNode" />
+              <item name="oa_web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oa" type="462c0819:PsiDirectoryNode" />
+              <item name="oa_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oa" type="462c0819:PsiDirectoryNode" />
+              <item name="oa_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oa" type="462c0819:PsiDirectoryNode" />
+              <item name="oa_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oa" type="462c0819:PsiDirectoryNode" />
+              <item name="oa_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="oa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oa" type="462c0819:PsiDirectoryNode" />
+              <item name="oa_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="oa" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="NBKnowledgePane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -215,16 +412,16 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/oa_web/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/oa_web/src/main" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/pics" />
       <recent name="$PROJECT_DIR$/oa_web/src/main/webapp" />
       <recent name="$PROJECT_DIR$/oa_web" />
       <recent name="$PROJECT_DIR$/oa_web/src/main/resources" />
-      <recent name="$PROJECT_DIR$/oa_web/src/main/java/com/geekerstar/oa" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/oa_web/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/oa_web/src/main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -252,11 +449,11 @@
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_oa" />
       </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="53738" />
       </RunnerSettings>
@@ -328,21 +525,31 @@
       <workItem from="1537447663985" duration="1314000" />
       <workItem from="1537449075979" duration="535000" />
       <workItem from="1537449658497" duration="3030000" />
+      <workItem from="1537453250714" duration="33000" />
+      <workItem from="1562820375365" duration="642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6840000" />
+    <option name="totallyTimeSpent" value="7515000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="47" width="1400" height="907" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="942" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26435935" />
+      <window_info id="JRebel" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22527473" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Sequence" />
+      <window_info anchor="bottom" id="Statistic" />
+      <window_info anchor="bottom" id="Tail" />
+      <window_info anchor="bottom" id="MyBatis Sql Log" />
+      <window_info anchor="bottom" id="JRebel Console" side_tool="true" />
+      <window_info anchor="bottom" id="JRebel Executor" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32883435" />
@@ -353,11 +560,14 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32883435" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31529412" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50073636" side_tool="true" weight="0.32883435" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4992636" weight="0.32883435" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32883435" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="RestServices" />
+      <window_info anchor="right" id="ASM" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -370,11 +580,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/oa_web/webapp/WEB-INF/web.xml" />
     <entry file="file://$PROJECT_DIR$/oa_web/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-145">
@@ -386,9 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -396,9 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -406,9 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -430,9 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -440,9 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -450,9 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -460,9 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -470,9 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -480,9 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -497,9 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -521,9 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -559,9 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-788">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -569,9 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-188">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -593,9 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -603,9 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -613,9 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-113">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -722,11 +880,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/oa.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="240">
-            <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <caret line="16" selection-start-line="16" selection-end-line="16" />
           </first_editor>
           <second_editor />
         </state>

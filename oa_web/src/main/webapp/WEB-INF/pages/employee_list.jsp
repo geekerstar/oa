@@ -22,7 +22,8 @@
                                     <i class="fa fa-trash"></i>
                                 </button>
                                 <button type="button" class="btn btn-default light">
-                                    <i class="fa fa-plus" onclick="javascript:window.location.href='/employee/to_add';"></i>
+                                    <i class="fa fa-plus"
+                                       onclick="javascript:window.location.href='/employee/to_add';"></i>
                                 </button>
                             </div>
                         </div>
@@ -52,24 +53,24 @@
                         </thead>
                         <tbody>
                         <c:forEach items="${list}" var="emp">
-                        <tr class="message-unread">
-                            <td class="hidden-xs">
-                                <label class="option block mn">
-                                    <input type="checkbox" name="mobileos" value="FR">
-                                    <span class="checkbox mn"></span>
-                                </label>
-                            </td>
-                            <td>${emp.sn}</td>
-                            <td>${emp.name}</td>
-                            <td class="text-center fw600">${emp.department.name}</td>
-                            <td class="hidden-xs">
-                                <span class="badge badge-warning mr10 fs11">${emp.post}</span>
-                            </td>
-                            <td>
-                                <a href="/employee/to_update?sn=${emp.sn}">编辑</a>
-                                <a href="/employee/remove?sn=${emp.sn}">删除</a>
-                            </td>
-                        </tr>
+                            <tr class="message-unread">
+                                <td class="hidden-xs">
+                                    <label class="option block mn">
+                                        <input type="checkbox" name="mobileos" value="FR">
+                                        <span class="checkbox mn"></span>
+                                    </label>
+                                </td>
+                                <td>${emp.sn}</td>
+                                <td>${emp.name}</td>
+                                <td class="text-center fw600">${emp.department.name}</td>
+                                <td class="hidden-xs">
+                                    <span class="badge badge-warning mr10 fs11">${emp.post}</span>
+                                </td>
+                                <td>
+                                    <a href="/employee/to_update?sn=${emp.sn}">编辑</a>
+                                    <a href="/employee/remove?sn=${emp.sn}">删除</a>
+                                </td>
+                            </tr>
                         </c:forEach>
                         </tbody>
                     </table>

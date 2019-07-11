@@ -38,9 +38,9 @@
                     </div>
                     <div class="section row">
                         <C:forEach items="${items}" var="item">
-                        <div class="col-md-3">${item.item}</div>
-                        <div class="col-md-3">${item.amount}</div>
-                        <div class="col-md-5">${item.comment}</div>
+                            <div class="col-md-3">${item.item}</div>
+                            <div class="col-md-3">${item.amount}</div>
+                            <div class="col-md-5">${item.comment}</div>
                         </C:forEach>
                     </div>
                     <div class="section row">
@@ -51,16 +51,16 @@
                         <span> 处理流程 </span>
                     </div>
                     <div class="section row">
-                    <c:forEach items="${records}" var="record">
-                        <div class="col-md-1">${record.dealer.name}</div>
-                        <div class="col-md-3"><spring:eval expression="record.dealTime"/></div>
-                        <div class="col-md-1">${record.dealWay}</div>
-                        <div class="col-md-2">${record.dealWay}</div>
-                        <div class="col-md-5">备注：${record.comment}</div>
-                    </c:forEach>
+                        <c:forEach items="${records}" var="record">
+                            <div class="col-md-1">${record.dealer.name}</div>
+                            <div class="col-md-3"><spring:eval expression="record.dealTime"/></div>
+                            <div class="col-md-1">${record.dealWay}</div>
+                            <div class="col-md-2">${record.dealWay}</div>
+                            <div class="col-md-5">备注：${record.comment}</div>
+                        </c:forEach>
                     </div>
                     <form:form id="admin-form" name="addForm" action="/claim_voucher/check" modelAttribute="record">
-                        <form:hidden path="claimVoucherId" />
+                        <form:hidden path="claimVoucherId"/>
                         <div class="panel-body bg-light">
                             <div class="section">
                                 <label for="comment" class="field prepend-icon">
@@ -73,14 +73,19 @@
                             <div class="panel-footer text-right">
 
                                 <c:if test="${sessionScope.employee.post==Contant.POST_FM || sessionScope.employee.post==Contant.POST_GM}">
-                                <button type="submit" class="button" name="dealWay" value="${Contant.DEAL_PASS}" >${Contant.DEAL_PASS}</button>
-                                <button type="submit" class="button" name="dealWay" value="${Contant.DEAL_BACK}" >${Contant.DEAL_BACK}</button>
-                                <button type="submit" class="button" name="dealWay" value="${Contant.DEAL_REJECT}" >${Contant.DEAL_REJECT}</button>
+                                    <button type="submit" class="button" name="dealWay"
+                                            value="${Contant.DEAL_PASS}">${Contant.DEAL_PASS}</button>
+                                    <button type="submit" class="button" name="dealWay"
+                                            value="${Contant.DEAL_BACK}">${Contant.DEAL_BACK}</button>
+                                    <button type="submit" class="button" name="dealWay"
+                                            value="${Contant.DEAL_REJECT}">${Contant.DEAL_REJECT}</button>
                                 </c:if>
                                 <c:if test="${sessionScope.employee.post==Contant.POST_CASHIER}">
-                                <button type="submit" class="button" name="dealWay" value="${Contant.DEAL_PAID}" >${Contant.DEAL_PAID}</button>
+                                    <button type="submit" class="button" name="dealWay"
+                                            value="${Contant.DEAL_PAID}">${Contant.DEAL_PAID}</button>
                                 </c:if>
-                                <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回 </button>
+                                <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回
+                                </button>
                             </div>
                         </div>
                     </form:form>

@@ -8,8 +8,8 @@
 /*jshint multistr: true */
 'use strict';
 
-(function($) {
-    jQuery.sessionTimeout = function(options) {
+(function ($) {
+    jQuery.sessionTimeout = function (options) {
         var defaults = {
             title: 'Your Session is About to Expire!',
             message: 'Your session is about to expire.',
@@ -51,7 +51,7 @@
         if (typeof opt.onWarn !== 'function') {
             // If opt.countdownMessage is defined add a coundown timer message to the modal dialog
             var countdownMessage = opt.countdownMessage ?
-            '<p>' + opt.countdownMessage.replace(/{timer}/g, '<span class="countdown-holder"></span>') + '</p>' : '';
+                '<p>' + opt.countdownMessage.replace(/{timer}/g, '<span class="countdown-holder"></span>') + '</p>' : '';
             var coundownBarHtml = opt.countdownBar ?
                 '<div class="progress"> \
                   <div class="progress-bar progress-bar-striped countdown-bar active" role="progressbar" style="min-width: 15px; width: 100%;"> \
@@ -81,11 +81,11 @@
              </div>');
 
             // "Logout" button click
-            $('#session-timeout-dialog-logout').on('click', function() {
+            $('#session-timeout-dialog-logout').on('click', function () {
                 window.location = opt.logoutUrl;
             });
             // "Stay Connected" button click
-            $('#session-timeout-dialog').on('hide.bs.modal', function() {
+            $('#session-timeout-dialog').on('hide.bs.modal', function () {
                 // Restart session timer
                 startSessionTimer();
             });
@@ -93,7 +93,7 @@
 
         // Reset timer on any of these events
         if (!opt.ignoreUserActivity) {
-            $(document).on('keyup mouseup mousemove touchend touchmove', function() {
+            $(document).on('keyup mouseup mousemove touchend touchmove', function () {
                 startSessionTimer();
             });
         }
@@ -111,7 +111,7 @@
                     data: opt.ajaxData
                 });
                 keepAlivePinged = true;
-                setTimeout(function() {
+                setTimeout(function () {
                     keepAlivePinged = false;
                 }, opt.keepAliveInterval);
             }
@@ -134,7 +134,7 @@
             }
 
             // Set session timer
-            timer = setTimeout(function() {
+            timer = setTimeout(function () {
                 // Check for onWarn callback function and if there is none, launch dialog
                 if (typeof opt.onWarn !== 'function') {
                     $('#session-timeout-dialog').modal('show');
@@ -155,7 +155,7 @@
                 startCountdownTimer('dialog', true);
             }
             // Set dialog timer
-            timer = setTimeout(function() {
+            timer = setTimeout(function () {
                 // Check for onRedir callback function and if there is none, launch redirect
                 if (typeof opt.onRedir !== 'function') {
                     window.location = opt.redirUrl;
@@ -193,7 +193,7 @@
 
             // Countdown by one second
             countdown.timeLeft = countdown.timeLeft - 1;
-            countdown.timer = setTimeout(function() {
+            countdown.timer = setTimeout(function () {
                 // Call self after one second
                 startCountdownTimer(type);
             }, 1000);

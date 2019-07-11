@@ -9,7 +9,7 @@
         </div>
         <div class="admin-form theme-primary mw1000 center-block" style="padding-bottom: 175px;">
             <div class="panel heading-border">
-                <form:form action="/employee/add" modelAttribute="employee"  id="admin-form" name="addForm">
+                <form:form action="/employee/add" modelAttribute="employee" id="admin-form" name="addForm">
                     <div class="panel-body bg-light">
                         <div class="section-divider mt20 mb40">
                             <span> 基本信息 </span>
@@ -17,7 +17,7 @@
                         <div class="section row">
                             <div class="col-md-6">
                                 <label for="sn" class="field prepend-icon">
-                                    <form:input path="sn" cssClass="gui-input" placeholder="工号..." />
+                                    <form:input path="sn" cssClass="gui-input" placeholder="工号..."/>
                                     <label for="sn" class="field-icon">
                                         <i class="fa fa-user"></i>
                                     </label>
@@ -35,7 +35,8 @@
                         <div class="section row">
                             <div class="col-md-6">
                                 <label for="sn" class="field select">
-                                    <form:select path="departmentSn" items="${dlist}" itemLabel="name" itemValue="sn" cssClass="gui-input" placeholder="所属部门..."/>
+                                    <form:select path="departmentSn" items="${dlist}" itemLabel="name" itemValue="sn"
+                                                 cssClass="gui-input" placeholder="所属部门..."/>
                                     <i class="arrow double"></i>
                                 </label>
                             </div>
@@ -47,8 +48,9 @@
                             </div>
                         </div>
                         <div class="panel-footer text-right">
-                            <button type="submit" class="button"> 保存 </button>
-                            <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回 </button>
+                            <button type="submit" class="button"> 保存</button>
+                            <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回
+                            </button>
                         </div>
                     </div>
                 </form:form>

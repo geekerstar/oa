@@ -4,59 +4,59 @@ var D3Charts = function () {
     // Init Flot Chart Plugins
     var runD3Plugins = function () {
 
-		// Plugin 1
+        // Plugin 1
 
-	}
+    }
 
     // Init Flot Charts Plugin
     var runD3Charts = function () {
 
-       // Add a series of colors to be used in the charts and pie graphs
+        // Add a series of colors to be used in the charts and pie graphs
         var Colors = [bgPrimary, bgInfo, bgWarning, bgAlert, bgDanger, bgSystem, bgSuccess,];
 
         // Line Chart
         var chart1 = c3.generate({
-        	bindto: '#line-chart',
-          color: {
-            pattern: Colors,
-          },
-          point: {
-            r: 3
-          },
-          padding: {
-            left: 30,
-            right: 30,
-            top: 0,
-            bottom: 0,
-          },
-          data: {
-            columns: [
-              ['data1', 30, 200, 100, 400, 150, 250],
-              ['data2', 50, 20, 10, 40, 15, 25]
-            ],
-            axes: {
-              data1: 'y',
-              data2: 'y2',
-            }
-          },
-          axis: {
-            x: {
-              label: 'X Label'
+            bindto: '#line-chart',
+            color: {
+                pattern: Colors,
             },
-            y: {
-              label: {
-                text: 'Y Axis Label',
-                position: 'outer-middle'
-              }
+            point: {
+                r: 3
             },
-            y2: {
-              show: true,
-              label: {
-                text: 'Y2 Axis Label',
-                position: 'outer-middle'
-              }
+            padding: {
+                left: 30,
+                right: 30,
+                top: 0,
+                bottom: 0,
+            },
+            data: {
+                columns: [
+                    ['data1', 30, 200, 100, 400, 150, 250],
+                    ['data2', 50, 20, 10, 40, 15, 25]
+                ],
+                axes: {
+                    data1: 'y',
+                    data2: 'y2',
+                }
+            },
+            axis: {
+                x: {
+                    label: 'X Label'
+                },
+                y: {
+                    label: {
+                        text: 'Y Axis Label',
+                        position: 'outer-middle'
+                    }
+                },
+                y2: {
+                    show: true,
+                    label: {
+                        text: 'Y2 Axis Label',
+                        position: 'outer-middle'
+                    }
+                }
             }
-          }
         });
         // setTimeout(function () {
         //   chart1.axis.labels({
@@ -79,14 +79,14 @@ var D3Charts = function () {
         var chart2 = c3.generate({
             bindto: '#area-chart',
             color: {
-              pattern: Colors,
+                pattern: Colors,
             },
             padding: {
-            left: 30,
-              right: 15,
-              top: 0,
-              bottom: 0,
-           },
+                left: 30,
+                right: 15,
+                top: 0,
+                bottom: 0,
+            },
             data: {
                 columns: [
                     ['data1', 300, 350, 300, 0, 0, 0],
@@ -104,14 +104,14 @@ var D3Charts = function () {
         var chart3 = c3.generate({
             bindto: '#step-chart',
             color: {
-              pattern: Colors,
+                pattern: Colors,
             },
             padding: {
-              left: 30,
-              right: 15,
-              top: 0,
-              bottom: 0,
-           },
+                left: 30,
+                right: 15,
+                top: 0,
+                bottom: 0,
+            },
             data: {
                 columns: [
                     ['data1', 300, 350, 300, 0, 0, 100],
@@ -129,14 +129,14 @@ var D3Charts = function () {
         var chart4 = c3.generate({
             bindto: '#bar-chart',
             color: {
-              pattern: Colors,
+                pattern: Colors,
             },
             padding: {
-            left: 30,
-              right: 15,
-              top: 0,
-              bottom: 0,
-           },
+                left: 30,
+                right: 15,
+                top: 0,
+                bottom: 0,
+            },
             data: {
                 columns: [
                     ['data1', 30, 200, 100, 400, 150, 250],
@@ -165,14 +165,14 @@ var D3Charts = function () {
         var chart5 = c3.generate({
             bindto: '#timeseries-chart',
             color: {
-              pattern: Colors,
+                pattern: Colors,
             },
             padding: {
-              left: 30,
-              right: 15,
-              top: 0,
-              bottom: 0,
-           },
+                left: 30,
+                right: 15,
+                top: 0,
+                bottom: 0,
+            },
             data: {
                 x: 'x',
                 // xFormat: '%Y%m%d', // 'xFormat' can be used as custom format of 'x'
@@ -205,14 +205,14 @@ var D3Charts = function () {
         var chart6 = c3.generate({
             bindto: '#scatter-chart',
             color: {
-              pattern: Colors,
+                pattern: Colors,
             },
             padding: {
-              left: 30,
-              right: 15,
-              top: 0,
-              bottom: 0,
-           },
+                left: 30,
+                right: 15,
+                top: 0,
+                bottom: 0,
+            },
             data: {
                 xs: {
                     setosa: 'setosa_x',
@@ -268,14 +268,14 @@ var D3Charts = function () {
         var chart7 = c3.generate({
             bindto: '#spline-chart',
             color: {
-              pattern: Colors,
+                pattern: Colors,
             },
             padding: {
-              left: 30,
-              right: 15,
-              top: 0,
-              bottom: 0,
-           },
+                left: 30,
+                right: 15,
+                top: 0,
+                bottom: 0,
+            },
             data: {
                 columns: [
                     ['data1', 30, 200, 100, 400, 150, 250],
@@ -290,14 +290,14 @@ var D3Charts = function () {
         var chart8 = c3.generate({
             bindto: '#subnav-chart',
             color: {
-              pattern: Colors,
+                pattern: Colors,
             },
             padding: {
-              left: 25,
-              right: 15,
-              top: 0,
-              bottom: 0,
-           },
+                left: 25,
+                right: 15,
+                top: 0,
+                bottom: 0,
+            },
             data: {
                 columns: [
                     ['sample', 30, 200, 100, 400, 150, 250]
@@ -313,14 +313,14 @@ var D3Charts = function () {
         var chart9 = c3.generate({
             bindto: '#zoom-chart',
             color: {
-              pattern: Colors,
+                pattern: Colors,
             },
             padding: {
-              left: 30,
-              right: 15,
-              top: 0,
-              bottom: 0,
-           },
+                left: 30,
+                right: 15,
+                top: 0,
+                bottom: 0,
+            },
             data: {
                 columns: [
                     ['sample', 30, 200, 100, 400, 150, 250, 150, 200, 170, 240, 350, 150, 100, 400, 150, 250, 150, 200, 170, 240, 100, 150, 250, 150, 200, 170, 240, 30, 200, 100, 400, 150, 250, 150, 200, 170, 240, 350, 150, 100, 400, 350, 220, 250, 300, 270, 140, 150, 90, 150, 50, 120, 70, 40]
@@ -336,17 +336,23 @@ var D3Charts = function () {
         var chart10 = c3.generate({
             bindto: '#donut-chart',
             color: {
-              pattern: Colors,
+                pattern: Colors,
             },
             data: {
                 columns: [
                     ['data1', 30],
                     ['data2', 120],
                 ],
-                type : 'donut',
-                onclick: function (d, i) { console.log("onclick", d, i); },
-                onmouseover: function (d, i) { console.log("onmouseover", d, i); },
-                onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+                type: 'donut',
+                onclick: function (d, i) {
+                    console.log("onclick", d, i);
+                },
+                onmouseover: function (d, i) {
+                    console.log("onmouseover", d, i);
+                },
+                onmouseout: function (d, i) {
+                    console.log("onmouseout", d, i);
+                }
             },
             donut: {
                 title: "Iris Petal Width"
@@ -375,33 +381,39 @@ var D3Charts = function () {
         var chart11 = c3.generate({
             bindto: '#guage-chart',
             color: {
-              pattern: Colors,
-              threshold: {
-                 // unit: 'value', // percentage is default
-                 // max: 200, // 100 is default
-                 values: [30, 60, 90, 100]
-              }
+                pattern: Colors,
+                threshold: {
+                    // unit: 'value', // percentage is default
+                    // max: 200, // 100 is default
+                    values: [30, 60, 90, 100]
+                }
             },
             data: {
                 columns: [
                     ['data', 91.4]
                 ],
                 type: 'gauge',
-                onclick: function (d, i) { console.log("onclick", d, i); },
-                onmouseover: function (d, i) { console.log("onmouseover", d, i); },
-                onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+                onclick: function (d, i) {
+                    console.log("onclick", d, i);
+                },
+                onmouseover: function (d, i) {
+                    console.log("onmouseover", d, i);
+                },
+                onmouseout: function (d, i) {
+                    console.log("onmouseout", d, i);
+                }
             },
             gauge: {
-             // label: {
-             //     format: function(value, ratio) {
-             //         return value;
-             //     },
-             //     show: false // to turn off the min/max labels.
-             // },
-             // min: 0, // 0 is default, //can handle negative min e.g. vacuum / voltage / current flow / rate of change
-             // max: 100, // 100 is default
-             // units: ' %',
-             // width: 39 // for adjusting arc thickness
+                // label: {
+                //     format: function(value, ratio) {
+                //         return value;
+                //     },
+                //     show: false // to turn off the min/max labels.
+                // },
+                // min: 0, // 0 is default, //can handle negative min e.g. vacuum / voltage / current flow / rate of change
+                // max: 100, // 100 is default
+                // units: ' %',
+                // width: 39 // for adjusting arc thickness
             },
             size: {
                 height: 180
@@ -437,7 +449,7 @@ var D3Charts = function () {
         var chart12 = c3.generate({
             bindto: '#pie-chart',
             color: {
-              pattern: Colors,
+                pattern: Colors,
             },
             data: {
                 // iris data from R
@@ -445,10 +457,16 @@ var D3Charts = function () {
                     ['data1', 30],
                     ['data2', 120],
                 ],
-                type : 'pie',
-                onclick: function (d, i) { console.log("onclick", d, i); },
-                onmouseover: function (d, i) { console.log("onmouseover", d, i); },
-                onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+                type: 'pie',
+                onclick: function (d, i) {
+                    console.log("onclick", d, i);
+                },
+                onmouseover: function (d, i) {
+                    console.log("onmouseover", d, i);
+                },
+                onmouseout: function (d, i) {
+                    console.log("onmouseout", d, i);
+                }
             }
         });
         // setTimeout(function () {
@@ -474,14 +492,14 @@ var D3Charts = function () {
         var chart13 = c3.generate({
             bindto: '#combo-chart',
             color: {
-              pattern: Colors,
+                pattern: Colors,
             },
             padding: {
-              left: 30,
-              right: 15,
-              top: 0,
-              bottom: 0,
-           },
+                left: 30,
+                right: 15,
+                top: 0,
+                bottom: 0,
+            },
             data: {
                 columns: [
                     ['data1', 30, 20, 50, 40, 60, 50],
@@ -498,7 +516,7 @@ var D3Charts = function () {
                     data6: 'area',
                 },
                 groups: [
-                    ['data1','data2']
+                    ['data1', 'data2']
                 ]
             }
         });
@@ -506,8 +524,8 @@ var D3Charts = function () {
     };
     return {
         init: function () {
-			runD3Plugins();
-        	runD3Charts();
+            runD3Plugins();
+            runD3Charts();
         }
     };
 }();
