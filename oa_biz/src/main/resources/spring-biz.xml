@@ -18,11 +18,11 @@
     <aop:aspectj-autoproxy/>
 
 
-    <bean id="transationManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
-    <tx:advice id="txAdvice" transaction-manager="transationManager">
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
         <tx:attributes>
             <tx:method name="get*" read-only="true"/>
             <tx:method name="find*" read-only="true"/>
